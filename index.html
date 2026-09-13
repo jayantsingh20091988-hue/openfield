@@ -1,0 +1,1919 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="OpenField — Explore powerful free and open-source tools across 3D, game development, local AI, electronics, multimedia, physics and student learning."
+    >
+
+    <meta
+        name="theme-color"
+        content="#080810"
+    >
+
+    <title>OpenField — Explore. Learn. Create.</title>
+
+    <link rel="stylesheet" href="css/home.css">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap"
+        rel="stylesheet"
+    >
+</head>
+
+<body>
+
+    <!-- ================================
+         BACKGROUND EFFECTS
+    ================================= -->
+
+    <div class="noise"></div>
+
+    <div class="aurora aurora-one"></div>
+    <div class="aurora aurora-two"></div>
+    <div class="aurora aurora-three"></div>
+
+    <div class="cursor-glow"></div>
+
+    <!-- ================================
+         READING PROGRESS
+    ================================= -->
+
+    <div class="reading-progress">
+        <span id="progressBar"></span>
+    </div>
+
+    <!-- ================================
+         NAVBAR
+    ================================= -->
+
+    <header class="navbar">
+
+        <a href="index.html" class="logo">
+            <span class="logo-mark">
+                O
+            </span>
+
+            <span class="logo-text">
+                Open<span>Field</span>
+            </span>
+        </a>
+
+        <nav class="nav-links">
+
+            <a href="#explore">Explore</a>
+
+            <a href="#why">Why OpenField</a>
+
+            <a href="#feedback">Feedback</a>
+
+            <a href="#about">About</a>
+
+        </nav>
+
+        <div class="nav-actions">
+
+            <button
+                class="icon-btn"
+                id="searchButton"
+                aria-label="Search"
+            >
+                ⌕
+            </button>
+
+            <button
+                class="icon-btn"
+                id="themeButton"
+                aria-label="Change theme"
+            >
+                ◐
+            </button>
+
+            <button
+                class="menu-btn"
+                id="menuButton"
+                aria-label="Open menu"
+            >
+                ☰
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================================
+         MOBILE MENU
+    ================================= -->
+
+    <div class="mobile-menu" id="mobileMenu">
+
+        <a href="#explore">Explore</a>
+        <a href="#why">Why OpenField</a>
+        <a href="#feedback">Feedback</a>
+        <a href="#about">About</a>
+
+    </div>
+
+
+    <!-- ================================
+         SEARCH OVERLAY
+    ================================= -->
+
+    <div class="search-overlay" id="searchOverlay">
+
+        <div class="search-box">
+
+            <button
+                class="search-close"
+                id="searchClose"
+            >
+                ×
+            </button>
+
+            <span class="search-label">
+                SEARCH OPENFIELD
+            </span>
+
+            <input
+                type="text"
+                id="siteSearch"
+                placeholder="Search fields, tools or topics..."
+                autocomplete="off"
+            >
+
+            <div
+                class="search-results"
+                id="searchResults"
+            >
+                <p>Start typing to search...</p>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================================
+         HERO
+    ================================= -->
+
+    <main>
+
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <div class="eyebrow reveal">
+
+                    <span class="live-dot"></span>
+
+                    FREE • OPEN SOURCE • LEARNING
+
+                </div>
+
+                <h1 class="hero-title reveal">
+
+                    Explore the
+                    <span class="gradient-text">
+                        tools
+                    </span>
+
+                    that can
+                    <span class="outline-text">
+                        build the future.
+                    </span>
+
+                </h1>
+
+                <p class="hero-description reveal">
+
+                    OpenField is an interactive guide to powerful
+                    free and open-source software across technology,
+                    science, creativity and engineering.
+
+                </p>
+
+                <div class="hero-buttons reveal">
+
+                    <a
+                        href="#explore"
+                        class="btn btn-primary magnetic"
+                    >
+                        Explore Fields
+                        <span>↗</span>
+                    </a>
+
+                    <a
+                        href="#why"
+                        class="btn btn-secondary magnetic"
+                    >
+                        Why OpenField?
+                    </a>
+
+                </div>
+
+                <div class="hero-note reveal">
+
+                    <span>✦</span>
+                    No expensive software required.
+                    Learn with tools you can actually access.
+
+                </div>
+
+            </div>
+
+
+            <!-- HERO VISUAL -->
+
+            <div class="hero-visual reveal">
+
+                <div class="orbit orbit-1"></div>
+                <div class="orbit orbit-2"></div>
+                <div class="orbit orbit-3"></div>
+
+                <div class="core">
+
+                    <div class="core-inner">
+                        <span>∞</span>
+                    </div>
+
+                </div>
+
+                <div class="floating-node node-1">
+                    <span>3D</span>
+                </div>
+
+                <div class="floating-node node-2">
+                    <span>AI</span>
+                </div>
+
+                <div class="floating-node node-3">
+                    <span>PCB</span>
+                </div>
+
+                <div class="floating-node node-4">
+                    <span>PHY</span>
+                </div>
+
+                <div class="floating-node node-5">
+                    <span>GAME</span>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================================
+             STATS
+        ================================= -->
+
+        <section class="stats-section">
+
+            <div class="stats-grid">
+
+                <div class="stat-card reveal">
+
+                    <strong
+                        class="counter"
+                        data-target="6"
+                    >
+                        0
+                    </strong>
+
+                    <span>
+                        Core Fields
+                    </span>
+
+                </div>
+
+
+                <div class="stat-card reveal">
+
+                    <strong
+                        class="counter"
+                        data-target="100"
+                        data-suffix="%"
+                    >
+                        0
+                    </strong>
+
+                    <span>
+                        Focus on Free Tools
+                    </span>
+
+                </div>
+
+
+                <div class="stat-card reveal">
+
+                    <strong
+                        class="counter"
+                        data-target="1"
+                    >
+                        0
+                    </strong>
+
+                    <span>
+                        Student Learning Hub
+                    </span>
+
+                </div>
+
+
+                <div class="stat-card reveal">
+
+                    <strong>
+                        ∞
+                    </strong>
+
+                    <span>
+                        Things You Can Create
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================================
+             WHAT IS OPENFIELD
+        ================================= -->
+
+        <section
+            class="section intro-section"
+            id="why"
+        >
+
+            <div class="section-heading reveal">
+
+                <span class="section-number">
+                    01
+                </span>
+
+                <div>
+
+                    <span class="section-label">
+                        THE IDEA
+                    </span>
+
+                    <h2>
+                        What is
+                        <span class="gradient-text">
+                            OpenField?
+                        </span>
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+            <div class="intro-grid">
+
+                <div class="big-statement reveal">
+
+                    <p>
+                        Learning technology shouldn't begin with
+                        <span>“Which expensive software should I buy?”</span>
+                    </p>
+
+                    <p>
+                        It should begin with
+                        <span>“What do I want to understand or create?”</span>
+                    </p>
+
+                </div>
+
+
+                <div class="intro-copy reveal">
+
+                    <p>
+                        OpenField connects interesting fields of
+                        technology, science, engineering and digital
+                        creativity with powerful tools that are free
+                        or open source.
+                    </p>
+
+                    <p>
+                        Instead of giving you a giant list of software,
+                        each field explains what the field actually is,
+                        why it matters, what you can build with it,
+                        which tools are worth learning and where to go
+                        next.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================================
+             WHO SHOULD USE
+        ================================= -->
+
+        <section class="section users-section">
+
+            <div class="section-heading reveal">
+
+                <span class="section-number">
+                    02
+                </span>
+
+                <div>
+
+                    <span class="section-label">
+                        BUILT FOR
+                    </span>
+
+                    <h2>
+                        Who should
+                        <span class="gradient-text">
+                            use it?
+                        </span>
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+            <div class="audience-grid">
+
+                <article class="audience-card tilt-card reveal">
+
+                    <div class="audience-icon">
+                        🎓
+                    </div>
+
+                    <h3>
+                        Students
+                    </h3>
+
+                    <p>
+                        Discover real technology beyond textbooks
+                        and find tools for projects, experiments and
+                        deeper learning.
+                    </p>
+
+                    <span class="card-arrow">
+                        Explore → 
+                    </span>
+
+                </article>
+
+
+                <article class="audience-card tilt-card reveal">
+
+                    <div class="audience-icon">
+                        🧠
+                    </div>
+
+                    <h3>
+                        Curious Learners
+                    </h3>
+
+                    <p>
+                        Jump into completely new fields without
+                        needing expensive software or years of
+                        experience.
+                    </p>
+
+                    <span class="card-arrow">
+                        Discover →
+                    </span>
+
+                </article>
+
+
+                <article class="audience-card tilt-card reveal">
+
+                    <div class="audience-icon">
+                        🛠️
+                    </div>
+
+                    <h3>
+                        Makers & Creators
+                    </h3>
+
+                    <p>
+                        Find capable tools for building games,
+                        electronics, simulations, media and
+                        digital creations.
+                    </p>
+
+                    <span class="card-arrow">
+                        Build →
+                    </span>
+
+                </article>
+
+
+                <article class="audience-card tilt-card reveal">
+
+                    <div class="audience-icon">
+                        🔬
+                    </div>
+
+                    <h3>
+                        Future Researchers
+                    </h3>
+
+                    <p>
+                        Explore scientific computing, physics,
+                        AI, GIS, electronics and other technical
+                        disciplines.
+                    </p>
+
+                    <span class="card-arrow">
+                        Research →
+                    </span>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================================
+             WHY
+        ================================= -->
+
+        <section class="section reasons-section">
+
+            <div class="section-heading reveal">
+
+                <span class="section-number">
+                    03
+                </span>
+
+                <div>
+
+                    <span class="section-label">
+                        WHY USE IT
+                    </span>
+
+                    <h2>
+                        Why
+                        <span class="gradient-text">
+                            OpenField?
+                        </span>
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+            <div class="reason-list">
+
+                <div class="reason reveal">
+
+                    <div class="reason-number">
+                        01
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Start with the field, not the software
+                        </h3>
+
+                        <p>
+                            Understand what a field actually does
+                            before deciding which tool to learn.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="reason reveal">
+
+                    <div class="reason-number">
+                        02
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Learn without expensive licenses
+                        </h3>
+
+                        <p>
+                            The project focuses on free and
+                            open-source solutions wherever possible.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="reason reveal">
+
+                    <div class="reason-number">
+                        03
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            See real-world applications
+                        </h3>
+
+                        <p>
+                            Go beyond definitions and understand
+                            where the technology is actually used.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="reason reveal">
+
+                    <div class="reason-number">
+                        04
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Know what to learn next
+                        </h3>
+
+                        <p>
+                            Each field gives you a practical
+                            beginner-to-advanced direction.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================================
+             EXPLORE
+        ================================= -->
+
+        <section
+            class="section fields-section"
+            id="explore"
+        >
+
+            <div class="section-heading reveal">
+
+                <span class="section-number">
+                    04
+                </span>
+
+                <div>
+
+                    <span class="section-label">
+                        EXPLORE
+                    </span>
+
+                    <h2>
+                        Choose a
+                        <span class="gradient-text">
+                            field.
+                        </span>
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+            <div class="field-toolbar reveal">
+
+                <div class="field-search">
+
+                    <span>
+                        ⌕
+                    </span>
+
+                    <input
+                        type="text"
+                        id="fieldSearch"
+                        placeholder="Search fields..."
+                    >
+
+                </div>
+
+                <div class="field-count">
+                    <span id="visibleCount">6</span>
+                    / 6 fields
+                </div>
+
+            </div>
+
+
+            <div class="fields-grid" id="fieldsGrid">
+
+                <!-- FIELD 1 -->
+
+                <article
+                    class="field-card tilt-card reveal"
+                    data-name="3D VFX Digital Creation Blender Animation"
+                >
+
+                    <div class="field-top">
+
+                        <span class="field-number">
+                            01
+                        </span>
+
+                        <span class="field-status">
+                            FREE
+                        </span>
+
+                    </div>
+
+                    <div class="field-icon">
+                        ◈
+                    </div>
+
+                    <h3>
+                        3D, VFX & Digital Creation
+                    </h3>
+
+                    <p>
+                        Create 3D worlds, visual effects,
+                        animations and digital experiences
+                        with Blender and related tools.
+                    </p>
+
+                    <div class="field-tags">
+
+                        <span>3D</span>
+                        <span>VFX</span>
+                        <span>Animation</span>
+
+                    </div>
+
+                    <a
+                        href="vfx.html"
+                        class="field-link"
+                    >
+                        Explore field
+                        <span>↗</span>
+                    </a>
+
+                </article>
+
+
+                <!-- FIELD 2 -->
+
+                <article
+                    class="field-card tilt-card reveal"
+                    data-name="Game Development Interactive Simulation Godot"
+                >
+
+                    <div class="field-top">
+
+                        <span class="field-number">
+                            02
+                        </span>
+
+                        <span class="field-status">
+                            FREE
+                        </span>
+
+                    </div>
+
+                    <div class="field-icon">
+                        ◉
+                    </div>
+
+                    <h3>
+                        Game Development & Interactive Simulation
+                    </h3>
+
+                    <p>
+                        Build games, interactive experiences and
+                        simulations using the open-source Godot
+                        Engine.
+                    </p>
+
+                    <div class="field-tags">
+
+                        <span>Games</span>
+                        <span>Godot</span>
+                        <span>Simulation</span>
+
+                    </div>
+
+                    <a
+                        href="godot.html"
+                        class="field-link"
+                    >
+                        Explore field
+                        <span>↗</span>
+                    </a>
+
+                </article>
+
+
+                <!-- FIELD 3 -->
+
+                <article
+                    class="field-card tilt-card reveal"
+                    data-name="Local AI Artificial Intelligence Ollama LLM"
+                >
+
+                    <div class="field-top">
+
+                        <span class="field-number">
+                            03
+                        </span>
+
+                        <span class="field-status">
+                            LOCAL
+                        </span>
+
+                    </div>
+
+                    <div class="field-icon">
+                        AI
+                    </div>
+
+                    <h3>
+                        Local AI
+                    </h3>
+
+                    <p>
+                        Run AI models directly on your own computer,
+                        experiment with LLMs and understand local
+                        artificial intelligence.
+                    </p>
+
+                    <div class="field-tags">
+
+                        <span>AI</span>
+                        <span>LLMs</span>
+                        <span>Ollama</span>
+
+                    </div>
+
+                    <a
+                        href="ollama.html"
+                        class="field-link"
+                    >
+                        Explore field
+                        <span>↗</span>
+                    </a>
+
+                </article>
+
+
+                <!-- FIELD 4 -->
+
+                <article
+                    class="field-card tilt-card reveal"
+                    data-name="Electronics PCB Design KiCad Circuit"
+                >
+
+                    <div class="field-top">
+
+                        <span class="field-number">
+                            04
+                        </span>
+
+                        <span class="field-status">
+                            FREE
+                        </span>
+
+                    </div>
+
+                    <div class="field-icon">
+                        ⌁
+                    </div>
+
+                    <h3>
+                        Electronics & PCB Design
+                    </h3>
+
+                    <p>
+                        Design circuits and professional printed
+                        circuit boards using open-source electronics
+                        tools such as KiCad.
+                    </p>
+
+                    <div class="field-tags">
+
+                        <span>Electronics</span>
+                        <span>PCB</span>
+                        <span>KiCad</span>
+
+                    </div>
+
+                    <a
+                        href="kicad.html"
+                        class="field-link"
+                    >
+                        Explore field
+                        <span>↗</span>
+                    </a>
+
+                </article>
+
+
+                <!-- FIELD 5 -->
+
+                <article
+                    class="field-card tilt-card reveal"
+                    data-name="Multimedia Creation Editing Image Video Audio GIMP Kdenlive Audacity OBS"
+                >
+
+                    <div class="field-top">
+
+                        <span class="field-number">
+                            05
+                        </span>
+
+                        <span class="field-status">
+                            FREE
+                        </span>
+
+                    </div>
+
+                    <div class="field-icon">
+                        ◫
+                    </div>
+
+                    <h3>
+                        Multimedia Creation & Editing
+                    </h3>
+
+                    <p>
+                        Edit images, create graphics, produce videos,
+                        work with audio and record content using
+                        powerful open-source tools.
+                    </p>
+
+                    <div class="field-tags">
+
+                        <span>Image</span>
+                        <span>Video</span>
+                        <span>Audio</span>
+
+                    </div>
+
+                    <a
+                        href="editing.html"
+                        class="field-link"
+                    >
+                        Explore field
+                        <span>↗</span>
+                    </a>
+
+                </article>
+
+
+                <!-- FIELD 6 -->
+
+                <article
+                    class="field-card tilt-card reveal"
+                    data-name="Physics Simulation Computational Science Scientific Computing"
+                >
+
+                    <div class="field-top">
+
+                        <span class="field-number">
+                            06
+                        </span>
+
+                        <span class="field-status">
+                            SCIENCE
+                        </span>
+
+                    </div>
+
+                    <div class="field-icon">
+                        ∫
+                    </div>
+
+                    <h3>
+                        Physics & Simulation
+                    </h3>
+
+                    <p>
+                        Turn mathematical models into simulations
+                        and explore physical systems through
+                        computational science.
+                    </p>
+
+                    <div class="field-tags">
+
+                        <span>Physics</span>
+                        <span>Simulation</span>
+                        <span>Science</span>
+
+                    </div>
+
+                    <a
+                        href="physics.html"
+                        class="field-link"
+                    >
+                        Explore field
+                        <span>↗</span>
+                    </a>
+
+                </article>
+
+            </div>
+
+
+            <!-- NO RESULTS -->
+
+            <div
+                class="no-results"
+                id="noResults"
+            >
+
+                <div>
+                    ∅
+                </div>
+
+                <h3>
+                    No field found
+                </h3>
+
+                <p>
+                    Try another keyword.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================================
+             STUDENT HUB
+        ================================= -->
+
+        <section class="section hub-section">
+
+            <div class="hub-card reveal">
+
+                <div class="hub-decoration"></div>
+
+                <div class="hub-content">
+
+                    <span class="section-label">
+                        FOR LEARNERS
+                    </span>
+
+                    <h2>
+                        🎓 Student
+                        <span class="gradient-text">
+                            Learning Hub
+                        </span>
+                    </h2>
+
+                    <p>
+                        A separate collection of useful YouTube
+                        channels and learning resources for students
+                        across mathematics, science, programming,
+                        English, technology and competitive exams.
+                    </p>
+
+                    <a
+                        href="education.html"
+                        class="btn btn-primary magnetic"
+                    >
+                        Open Learning Hub
+                        <span>↗</span>
+                    </a>
+
+                </div>
+
+                <div class="hub-visual">
+
+                    <div class="book">
+                        <span>LEARN</span>
+                    </div>
+
+                    <div class="spark spark-1">✦</div>
+                    <div class="spark spark-2">+</div>
+                    <div class="spark spark-3">∞</div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================================
+             HOW IT WORKS
+        ================================= -->
+
+        <section class="section process-section">
+
+            <div class="section-heading reveal">
+
+                <span class="section-number">
+                    05
+                </span>
+
+                <div>
+
+                    <span class="section-label">
+                        SIMPLE PROCESS
+                    </span>
+
+                    <h2>
+                        How to use
+                        <span class="gradient-text">
+                            OpenField.
+                        </span>
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+            <div class="process-grid">
+
+                <div class="process-step reveal">
+
+                    <span>
+                        01
+                    </span>
+
+                    <h3>
+                        Choose
+                    </h3>
+
+                    <p>
+                        Pick a field that interests you.
+                    </p>
+
+                </div>
+
+
+                <div class="process-line"></div>
+
+
+                <div class="process-step reveal">
+
+                    <span>
+                        02
+                    </span>
+
+                    <h3>
+                        Understand
+                    </h3>
+
+                    <p>
+                        Learn what the field is and why it matters.
+                    </p>
+
+                </div>
+
+
+                <div class="process-line"></div>
+
+
+                <div class="process-step reveal">
+
+                    <span>
+                        03
+                    </span>
+
+                    <h3>
+                        Experiment
+                    </h3>
+
+                    <p>
+                        Try the recommended free tools.
+                    </p>
+
+                </div>
+
+
+                <div class="process-line"></div>
+
+
+                <div class="process-step reveal">
+
+                    <span>
+                        04
+                    </span>
+
+                    <h3>
+                        Create
+                    </h3>
+
+                    <p>
+                        Build something real and keep learning.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================================
+             FEEDBACK
+        ================================= -->
+
+        <section
+            class="section feedback-section"
+            id="feedback"
+        >
+
+            <div class="section-heading reveal">
+
+                <span class="section-number">
+                    06
+                </span>
+
+                <div>
+
+                    <span class="section-label">
+                        YOUR OPINION MATTERS
+                    </span>
+
+                    <h2>
+                        Help make
+                        <span class="gradient-text">
+                            OpenField better.
+                        </span>
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+            <div class="feedback-layout">
+
+                <div class="feedback-intro reveal">
+
+                    <div class="feedback-symbol">
+                        ✦
+                    </div>
+
+                    <h3>
+                        Found something useful?
+                    </h3>
+
+                    <p>
+                        Tell me what you liked, what feels confusing,
+                        what should be improved and which free or
+                        open-source tool deserves a place here.
+                    </p>
+
+                    <div class="feedback-points">
+
+                        <span>
+                            ✓ What did you like?
+                        </span>
+
+                        <span>
+                            ✓ What should change?
+                        </span>
+
+                        <span>
+                            ✓ What should be added?
+                        </span>
+
+                        <span>
+                            ✓ Which tool should I explore?
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <form
+                    class="feedback-form reveal"
+                    id="feedbackForm"
+                >
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+
+                            <label for="visitorName">
+                                Your name
+                            </label>
+
+                            <input
+                                type="text"
+                                id="visitorName"
+                                name="name"
+                                placeholder="Optional"
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="rating">
+                                Overall rating
+                            </label>
+
+                            <select
+                                id="rating"
+                                name="rating"
+                                required
+                            >
+
+                                <option value="">
+                                    Select rating
+                                </option>
+
+                                <option value="5">
+                                    ★★★★★ — Excellent
+                                </option>
+
+                                <option value="4">
+                                    ★★★★☆ — Very good
+                                </option>
+
+                                <option value="3">
+                                    ★★★☆☆ — Good
+                                </option>
+
+                                <option value="2">
+                                    ★★☆☆☆ — Needs improvement
+                                </option>
+
+                                <option value="1">
+                                    ★☆☆☆☆ — Poor
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="favoriteField">
+                            Which field did you find most interesting?
+                        </label>
+
+                        <select
+                            id="favoriteField"
+                            name="favorite"
+                            required
+                        >
+
+                            <option value="">
+                                Choose a field
+                            </option>
+
+                            <option>
+                                3D, VFX & Digital Creation
+                            </option>
+
+                            <option>
+                                Game Development & Interactive Simulation
+                            </option>
+
+                            <option>
+                                Local AI
+                            </option>
+
+                            <option>
+                                Electronics & PCB Design
+                            </option>
+
+                            <option>
+                                Multimedia Creation & Editing
+                            </option>
+
+                            <option>
+                                Physics & Simulation
+                            </option>
+
+                            <option>
+                                Student Learning Hub
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="usefulness">
+                            How useful was the website?
+                        </label>
+
+                        <div class="choice-grid">
+
+                            <label class="choice">
+
+                                <input
+                                    type="radio"
+                                    name="usefulness"
+                                    value="Very useful"
+                                    required
+                                >
+
+                                <span>
+                                    Very useful
+                                </span>
+
+                            </label>
+
+
+                            <label class="choice">
+
+                                <input
+                                    type="radio"
+                                    name="usefulness"
+                                    value="Useful"
+                                >
+
+                                <span>
+                                    Useful
+                                </span>
+
+                            </label>
+
+
+                            <label class="choice">
+
+                                <input
+                                    type="radio"
+                                    name="usefulness"
+                                    value="Somewhat useful"
+                                >
+
+                                <span>
+                                    Somewhat
+                                </span>
+
+                            </label>
+
+
+                            <label class="choice">
+
+                                <input
+                                    type="radio"
+                                    name="usefulness"
+                                    value="Not useful"
+                                >
+
+                                <span>
+                                    Not yet
+                                </span>
+
+                            </label>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="liked">
+                            What did you like?
+                        </label>
+
+                        <textarea
+                            id="liked"
+                            name="liked"
+                            rows="3"
+                            placeholder="Tell me what worked well..."
+                        ></textarea>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="improve">
+                            What should be improved?
+                        </label>
+
+                        <textarea
+                            id="improve"
+                            name="improve"
+                            rows="3"
+                            placeholder="Design, information, navigation, tools..."
+                        ></textarea>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="suggestion">
+                            Suggest a free/open-source tool
+                        </label>
+
+                        <input
+                            type="text"
+                            id="suggestion"
+                            name="suggestion"
+                            placeholder="App, software or website"
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="suggestionReason">
+                            Why should it be added?
+                        </label>
+
+                        <textarea
+                            id="suggestionReason"
+                            name="suggestionReason"
+                            rows="3"
+                            placeholder="What makes it useful or special?"
+                        ></textarea>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="extra">
+                            Anything else?
+                        </label>
+
+                        <textarea
+                            id="extra"
+                            name="extra"
+                            rows="3"
+                            placeholder="Any other idea, feedback or message..."
+                        ></textarea>
+
+                    </div>
+
+
+                    <button
+                        type="submit"
+                        class="btn btn-primary submit-btn magnetic"
+                    >
+
+                        Send Feedback
+
+                        <span>
+                            ↗
+                        </span>
+
+                    </button>
+
+                    <p class="form-note">
+                        Your email app will open with your feedback
+                        prepared. You can review it before sending.
+                    </p>
+
+                    <div
+                        class="form-message"
+                        id="formMessage"
+                    ></div>
+
+                </form>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================================
+             CONTACT CTA
+        ================================= -->
+
+        <section class="contact-section">
+
+            <div class="contact-card reveal">
+
+                <div class="contact-orb"></div>
+
+                <span class="section-label">
+                    HAVE AN IDEA?
+                </span>
+
+                <h2>
+                    Know a tool that
+                    <span class="gradient-text">
+                        belongs here?
+                    </span>
+                </h2>
+
+                <p>
+                    If you know a genuinely useful free or
+                    open-source app or website that should be
+                    included, send the suggestion directly.
+                </p>
+
+                <a
+                    href="mailto:jayantsingh20091988@gmail.com?subject=OpenField%20Tool%20Suggestion"
+                    class="email-link magnetic"
+                >
+
+                    jayantsingh20091988@gmail.com
+
+                    <span>
+                        ↗
+                    </span>
+
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================================
+             ABOUT ME
+        ================================= -->
+
+        <section
+            class="section about-section"
+            id="about"
+        >
+
+            <div class="section-heading reveal">
+
+                <span class="section-number">
+                    07
+                </span>
+
+                <div>
+
+                    <span class="section-label">
+                        THE PERSON BEHIND IT
+                    </span>
+
+                    <h2>
+                        About
+                        <span class="gradient-text">
+                            me.
+                        </span>
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+            <div class="about-card reveal">
+
+                <div class="about-avatar">
+
+                    <div class="avatar-ring"></div>
+
+                    <span>
+                        N
+                    </span>
+
+                </div>
+
+
+                <div class="about-content">
+
+                    <span class="about-role">
+                        STUDENT • LEARNER • BUILDER
+                    </span>
+
+                    <h3>
+                        Hi, I'm Navneet.
+                    </h3>
+
+                    <p>
+                        I'm a student who is curious about technology,
+                        science, computers and the way things work.
+                        I created OpenField to explore useful fields
+                        and make it easier for other learners to
+                        discover powerful tools without starting
+                        with expensive software.
+                    </p>
+
+                    <p>
+                        The idea behind this project is simple:
+                        instead of endlessly searching for software,
+                        understand the field first, discover the
+                        right tools and then start experimenting.
+                    </p>
+
+                    <div class="about-values">
+
+                        <span>
+                            Curiosity
+                        </span>
+
+                        <span>
+                            Learning
+                        </span>
+
+                        <span>
+                            Experimentation
+                        </span>
+
+                        <span>
+                            Open Source
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================================
+             FINAL CTA
+        ================================= -->
+
+        <section class="final-section">
+
+            <div class="final-glow"></div>
+
+            <div class="final-content reveal">
+
+                <span class="section-label">
+                    KEEP EXPLORING
+                </span>
+
+                <h2>
+                    One field can lead
+                    to an entire
+                    <span class="gradient-text">
+                        world.
+                    </span>
+                </h2>
+
+                <p>
+                    Choose something that interests you.
+                    Learn the basics. Open the software.
+                    Build something.
+                </p>
+
+                <a
+                    href="#explore"
+                    class="btn btn-primary magnetic"
+                >
+                    Start Exploring
+                    <span>↗</span>
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================================
+         FOOTER
+    ================================= -->
+
+    <footer class="footer">
+
+        <div class="footer-top">
+
+            <div>
+
+                <a
+                    href="index.html"
+                    class="logo"
+                >
+
+                    <span class="logo-mark">
+                        O
+                    </span>
+
+                    <span class="logo-text">
+                        Open<span>Field</span>
+                    </span>
+
+                </a>
+
+                <p>
+                    Explore. Learn. Create.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <a href="vfx.html">
+                    3D & VFX
+                </a>
+
+                <a href="godot.html">
+                    Game Development
+                </a>
+
+                <a href="ollama.html">
+                    Local AI
+                </a>
+
+                <a href="kicad.html">
+                    Electronics
+                </a>
+
+                <a href="editing.html">
+                    Multimedia
+                </a>
+
+                <a href="physics.html">
+                    Physics
+                </a>
+
+                <a href="education.html">
+                    Learning Hub
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <span>
+                © <span id="year"></span> OpenField
+            </span>
+
+            <span>
+                Built for curious minds.
+            </span>
+
+            <button
+                id="topButton"
+                class="top-button"
+            >
+                ↑ Back to top
+            </button>
+
+        </div>
+
+    </footer>
+
+
+    <!-- ================================
+         TOAST
+    ================================= -->
+
+    <div
+        class="toast"
+        id="toast"
+    >
+        <span>✓</span>
+        <p id="toastText">
+            Done!
+        </p>
+    </div>
+
+
+    <script src="fields/home.js"></script>
+
+</body>
+</html>

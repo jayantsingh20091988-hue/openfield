@@ -1,0 +1,1431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Electronics & PCB Design — KiCad</title>
+    <meta name="description"
+        content="Explore Electronics and PCB Design with KiCad, a free and open-source electronic design automation suite.">
+
+    <link rel="stylesheet" href="../css/kicad.css">
+</head>
+
+<body>
+
+    <!-- Reading Progress -->
+    <div class="progress-bar" id="progressBar"></div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="nav-container">
+
+            <a href="ollama.html" class="logo">
+                <span class="logo-icon">⚡</span>
+                OpenField
+            </a>
+
+            <nav class="nav">
+                <a href="ollama.html">← Local AI</a>
+                <a href="education.html">🎓 Learning Hub</a>
+                <a href="#explore">Explore</a>
+            </nav>
+
+            <button class="theme-btn" id="themeBtn" aria-label="Toggle theme">
+                ☀️
+            </button>
+
+        </div>
+    </header>
+
+
+    <!-- Hero -->
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <div class="badge">
+                ⚡ Electronics & PCB Design
+            </div>
+
+            <h1>
+                Turn electronic ideas into
+                <span>real hardware.</span>
+            </h1>
+
+            <p class="hero-subtitle">
+                Design circuits, create PCBs, simulate electronics,
+                and build physical devices using free and open-source tools.
+            </p>
+
+            <div class="hero-actions">
+                <a href="#learn" class="btn primary">Start Learning</a>
+                <a href="#tools" class="btn secondary">Explore Tools</a>
+            </div>
+
+        </div>
+
+        <div class="hero-orb orb-one"></div>
+        <div class="hero-orb orb-two"></div>
+
+    </section>
+
+
+    <main class="container">
+
+        <!-- What is this field -->
+        <section class="section reveal">
+
+            <span class="section-number">01</span>
+
+            <h2>What Is Electronics & PCB Design?</h2>
+
+            <p>
+                Electronics is the field of designing and working with circuits,
+                components, signals, sensors, microcontrollers, and electronic
+                systems.
+            </p>
+
+            <p>
+                PCB design is the process of turning an electronic circuit
+                schematic into a physical circuit board that connects all
+                components together.
+            </p>
+
+            <div class="highlight">
+                <strong>Simple idea:</strong>
+                You first design how the circuit should work,
+                then design how the physical board should be arranged.
+            </div>
+
+        </section>
+
+
+        <!-- Why it matters -->
+        <section class="section reveal">
+
+            <span class="section-number">02</span>
+
+            <h2>Why Does This Field Matter?</h2>
+
+            <div class="cards">
+
+                <div class="card">
+                    <div class="card-icon">📱</div>
+                    <h3>Everyday Technology</h3>
+                    <p>
+                        Phones, computers, watches, routers, cars and appliances
+                        all depend on electronic circuits.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon">🤖</div>
+                    <h3>Robotics</h3>
+                    <p>
+                        Robots need controllers, sensors, motors and communication
+                        circuits.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon">🚀</div>
+                    <h3>Aerospace</h3>
+                    <p>
+                        Spacecraft, satellites and rockets use specialized
+                        electronic systems.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon">🏭</div>
+                    <h3>Industry</h3>
+                    <p>
+                        Industrial machines rely on electronic control systems,
+                        sensors and embedded hardware.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- What can you do -->
+        <section class="section reveal">
+
+            <span class="section-number">03</span>
+
+            <h2>What Can You Do With Electronics?</h2>
+
+            <div class="feature-grid">
+
+                <div class="feature">
+                    <span>🔌</span>
+                    <h3>Design Circuits</h3>
+                    <p>Create and analyze electronic circuits.</p>
+                </div>
+
+                <div class="feature">
+                    <span>🧩</span>
+                    <h3>Design PCBs</h3>
+                    <p>Turn circuit diagrams into physical boards.</p>
+                </div>
+
+                <div class="feature">
+                    <span>🌡️</span>
+                    <h3>Build Sensors</h3>
+                    <p>Measure temperature, light, motion and other signals.</p>
+                </div>
+
+                <div class="feature">
+                    <span>🤖</span>
+                    <h3>Build Robots</h3>
+                    <p>Create control boards for robots and machines.</p>
+                </div>
+
+                <div class="feature">
+                    <span>💡</span>
+                    <h3>Prototype Devices</h3>
+                    <p>Transform ideas into working electronic prototypes.</p>
+                </div>
+
+                <div class="feature">
+                    <span>⚙️</span>
+                    <h3>Develop Embedded Systems</h3>
+                    <p>Combine hardware with microcontrollers and software.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Applications -->
+        <section class="section reveal">
+
+            <span class="section-number">04</span>
+
+            <h2>Real-World Applications</h2>
+
+            <div class="application-list">
+
+                <div>
+                    <strong>Consumer Electronics</strong>
+                    <span>Smartphones, laptops, headphones and smart devices</span>
+                </div>
+
+                <div>
+                    <strong>Automotive</strong>
+                    <span>Vehicle control systems, sensors and electric vehicles</span>
+                </div>
+
+                <div>
+                    <strong>Medical Devices</strong>
+                    <span>Monitoring equipment and diagnostic electronics</span>
+                </div>
+
+                <div>
+                    <strong>Robotics</strong>
+                    <span>Motor controllers, sensors and robot control boards</span>
+                </div>
+
+                <div>
+                    <strong>IoT</strong>
+                    <span>Connected sensors and smart devices</span>
+                </div>
+
+                <div>
+                    <strong>Aerospace</strong>
+                    <span>Flight computers, communication and instrumentation</span>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- People -->
+        <section class="section reveal">
+
+            <span class="section-number">05</span>
+
+            <h2>Who Works In This Field?</h2>
+
+            <div class="cards">
+
+                <div class="card">
+                    <h3>Electronics Engineer</h3>
+                    <p>Designs electronic circuits and hardware systems.</p>
+                </div>
+
+                <div class="card">
+                    <h3>PCB Designer</h3>
+                    <p>Creates the physical layout of electronic circuit boards.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Embedded Engineer</h3>
+                    <p>Combines hardware with software running on embedded devices.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Hardware Engineer</h3>
+                    <p>Develops and tests electronic hardware products.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Robotics Engineer</h3>
+                    <p>Builds electronic and control systems for robots.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Electrical Engineer</h3>
+                    <p>Works with electrical systems, power and electronics.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Core Concepts -->
+        <section class="section reveal">
+
+            <span class="section-number">06</span>
+
+            <h2>Core Concepts You Should Understand</h2>
+
+            <div class="concept-grid">
+
+                <div class="concept">
+                    <b>Voltage</b>
+                    <span>Electrical potential difference</span>
+                </div>
+
+                <div class="concept">
+                    <b>Current</b>
+                    <span>Flow of electric charge</span>
+                </div>
+
+                <div class="concept">
+                    <b>Resistance</b>
+                    <span>Opposition to current flow</span>
+                </div>
+
+                <div class="concept">
+                    <b>Ohm's Law</b>
+                    <span>V = IR</span>
+                </div>
+
+                <div class="concept">
+                    <b>Capacitance</b>
+                    <span>Ability to store electrical energy</span>
+                </div>
+
+                <div class="concept">
+                    <b>Inductance</b>
+                    <span>Property associated with magnetic fields</span>
+                </div>
+
+                <div class="concept">
+                    <b>Diodes</b>
+                    <span>Components that control current direction</span>
+                </div>
+
+                <div class="concept">
+                    <b>Transistors</b>
+                    <span>Used for switching and amplification</span>
+                </div>
+
+                <div class="concept">
+                    <b>Digital Logic</b>
+                    <span>Logic gates and binary signals</span>
+                </div>
+
+                <div class="concept">
+                    <b>Microcontrollers</b>
+                    <span>Small computers used inside electronic devices</span>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Tools -->
+        <section class="section reveal" id="tools">
+
+            <span class="section-number">07</span>
+
+            <h2>Best Free & Open-Source Tools</h2>
+
+            <div class="tool-grid">
+
+                <div class="tool-card featured-tool">
+
+                    <div class="tool-top">
+                        <span class="tool-logo">K</span>
+
+                        <div>
+                            <h3>KiCad</h3>
+                            <p>Electronic Design Automation</p>
+                        </div>
+                    </div>
+
+                    <p>
+                        A powerful open-source suite for schematic capture,
+                        PCB layout, design rules, 3D visualization and
+                        electronics development.
+                    </p>
+
+                    <span class="tag">Featured</span>
+
+                </div>
+
+
+                <div class="tool-card">
+
+                    <div class="tool-top">
+                        <span class="tool-logo">🧪</span>
+
+                        <div>
+                            <h3>ngspice</h3>
+                            <p>Circuit Simulation</p>
+                        </div>
+                    </div>
+
+                    <p>
+                        Open-source circuit simulator used to analyze
+                        electronic circuits.
+                    </p>
+
+                </div>
+
+
+                <div class="tool-card">
+
+                    <div class="tool-top">
+                        <span class="tool-logo">🖥️</span>
+
+                        <div>
+                            <h3>Qucs-S</h3>
+                            <p>Circuit Simulation</p>
+                        </div>
+                    </div>
+
+                    <p>
+                        A graphical circuit simulator that can work with
+                        SPICE-based simulation engines.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Featured Tool -->
+        <section class="section reveal">
+
+            <span class="section-number">08</span>
+
+            <div class="featured">
+
+                <div class="featured-label">
+                    ⭐ FEATURED TOOL
+                </div>
+
+                <h2>KiCad</h2>
+
+                <p class="large-text">
+                    An open-source Electronic Design Automation suite
+                    for designing complete electronic hardware.
+                </p>
+
+                <div class="kicad-features">
+
+                    <div>
+                        <span>01</span>
+                        <h3>Schematic Capture</h3>
+                        <p>
+                            Draw the logical circuit and connect electronic
+                            components together.
+                        </p>
+                    </div>
+
+                    <div>
+                        <span>02</span>
+                        <h3>PCB Layout</h3>
+                        <p>
+                            Arrange components and create copper traces
+                            on the physical circuit board.
+                        </p>
+                    </div>
+
+                    <div>
+                        <span>03</span>
+                        <h3>3D Viewer</h3>
+                        <p>
+                            Inspect how the completed PCB can look
+                            in three dimensions.
+                        </p>
+                    </div>
+
+                    <div>
+                        <span>04</span>
+                        <h3>Design Rules</h3>
+                        <p>
+                            Check whether your PCB layout follows
+                            important manufacturing constraints.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- How it works -->
+        <section class="section reveal">
+
+            <span class="section-number">09</span>
+
+            <h2>How Does PCB Design Work?</h2>
+
+            <div class="timeline">
+
+                <div class="timeline-item">
+                    <span>01</span>
+                    <div>
+                        <h3>Idea</h3>
+                        <p>Decide what your electronic device should do.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <span>02</span>
+                    <div>
+                        <h3>Schematic</h3>
+                        <p>Draw the circuit and connect the components.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <span>03</span>
+                    <div>
+                        <h3>Component Selection</h3>
+                        <p>Select appropriate resistors, ICs, connectors and other parts.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <span>04</span>
+                    <div>
+                        <h3>PCB Layout</h3>
+                        <p>Place components and route electrical connections.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <span>05</span>
+                    <div>
+                        <h3>Design Check</h3>
+                        <p>Run electrical and design-rule checks.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <span>06</span>
+                    <div>
+                        <h3>Manufacturing</h3>
+                        <p>Generate manufacturing files and produce the PCB.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <span>07</span>
+                    <div>
+                        <h3>Assembly & Testing</h3>
+                        <p>Install components and test the final hardware.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- What exactly KiCad does -->
+        <section class="section reveal">
+
+            <span class="section-number">10</span>
+
+            <h2>What Exactly Does KiCad Do?</h2>
+
+            <p>
+                KiCad connects the logical and physical sides of electronics
+                design.
+            </p>
+
+            <div class="two-column">
+
+                <div class="info-box">
+                    <h3>Before PCB Design</h3>
+                    <ul>
+                        <li>Draw schematics</li>
+                        <li>Choose components</li>
+                        <li>Connect electrical nets</li>
+                        <li>Check electrical rules</li>
+                    </ul>
+                </div>
+
+                <div class="info-box">
+                    <h3>During PCB Design</h3>
+                    <ul>
+                        <li>Place components</li>
+                        <li>Route traces</li>
+                        <li>Create board shapes</li>
+                        <li>Check design rules</li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Projects -->
+        <section class="section reveal">
+
+            <span class="section-number">11</span>
+
+            <h2>What Can You Build?</h2>
+
+            <div class="project-grid">
+
+                <div class="project">
+                    <span>💡</span>
+                    <h3>LED Controller</h3>
+                    <p>A beginner PCB controlling LEDs.</p>
+                </div>
+
+                <div class="project">
+                    <span>🌡️</span>
+                    <h3>Temperature Sensor</h3>
+                    <p>A board that measures temperature.</p>
+                </div>
+
+                <div class="project">
+                    <span>🔋</span>
+                    <h3>Battery Monitor</h3>
+                    <p>A circuit for monitoring battery voltage.</p>
+                </div>
+
+                <div class="project">
+                    <span>🤖</span>
+                    <h3>Robot Controller</h3>
+                    <p>A custom control board for a small robot.</p>
+                </div>
+
+                <div class="project">
+                    <span>📡</span>
+                    <h3>IoT Device</h3>
+                    <p>A sensor board connected to a network.</p>
+                </div>
+
+                <div class="project">
+                    <span>🎛️</span>
+                    <h3>Audio Circuit</h3>
+                    <p>A simple amplifier or audio processing board.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Real world examples -->
+        <section class="section reveal">
+
+            <span class="section-number">12</span>
+
+            <h2>Real-World Examples</h2>
+
+            <div class="example-table">
+
+                <div class="table-row table-head">
+                    <span>System</span>
+                    <span>Electronics Used</span>
+                </div>
+
+                <div class="table-row">
+                    <span>Smartphone</span>
+                    <span>Processors, sensors, power circuits, RF electronics</span>
+                </div>
+
+                <div class="table-row">
+                    <span>Drone</span>
+                    <span>Flight controller, sensors, motor controllers</span>
+                </div>
+
+                <div class="table-row">
+                    <span>Car</span>
+                    <span>ECUs, sensors, communication systems</span>
+                </div>
+
+                <div class="table-row">
+                    <span>Satellite</span>
+                    <span>Communication, power and control electronics</span>
+                </div>
+
+                <div class="table-row">
+                    <span>Robot</span>
+                    <span>Microcontrollers, sensors and motor drivers</span>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Difficulty -->
+        <section class="section reveal">
+
+            <span class="section-number">13</span>
+
+            <h2>Difficulty Level</h2>
+
+            <div class="difficulty">
+
+                <div class="difficulty-level active">
+                    <span>🟢</span>
+                    <strong>Beginner</strong>
+                    <p>
+                        Basic circuits, resistors, LEDs and simple schematics.
+                    </p>
+                </div>
+
+                <div class="difficulty-level">
+                    <span>🟡</span>
+                    <strong>Intermediate</strong>
+                    <p>
+                        Microcontrollers, sensors, PCB routing and debugging.
+                    </p>
+                </div>
+
+                <div class="difficulty-level">
+                    <span>🔴</span>
+                    <strong>Advanced</strong>
+                    <p>
+                        High-speed signals, RF, power electronics and complex
+                        multilayer boards.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Hardware -->
+        <section class="section reveal">
+
+            <span class="section-number">14</span>
+
+            <h2>Hardware Requirements</h2>
+
+            <div class="spec-grid">
+
+                <div class="spec">
+                    <span>💻</span>
+                    <b>Computer</b>
+                    <p>Windows, Linux or macOS computer.</p>
+                </div>
+
+                <div class="spec">
+                    <span>🧠</span>
+                    <b>RAM</b>
+                    <p>4 GB can work for basic designs; 8 GB+ is more comfortable.</p>
+                </div>
+
+                <div class="spec">
+                    <span>💾</span>
+                    <b>Storage</b>
+                    <p>Enough free space for software, libraries and projects.</p>
+                </div>
+
+                <div class="spec">
+                    <span>🔧</span>
+                    <b>Optional Hardware</b>
+                    <p>Breadboard, multimeter and components for physical projects.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- OS -->
+        <section class="section reveal">
+
+            <span class="section-number">15</span>
+
+            <h2>Operating-System Support</h2>
+
+            <div class="os-grid">
+
+                <div>🪟 <strong>Windows</strong></div>
+                <div>🐧 <strong>Linux</strong></div>
+                <div>🍎 <strong>macOS</strong></div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Advantages -->
+        <section class="section reveal">
+
+            <span class="section-number">16</span>
+
+            <h2>Advantages</h2>
+
+            <div class="pros-cons">
+
+                <div class="pros">
+
+                    <h3>✓ Advantages</h3>
+
+                    <ul>
+                        <li>Free and open source</li>
+                        <li>Professional PCB design capabilities</li>
+                        <li>Cross-platform</li>
+                        <li>Large component libraries</li>
+                        <li>3D PCB visualization</li>
+                        <li>Strong community</li>
+                        <li>Suitable for hobbyists and professionals</li>
+                    </ul>
+
+                </div>
+
+
+                <div class="cons">
+
+                    <h3>⚠ Limitations</h3>
+
+                    <ul>
+                        <li>Learning electronics takes time</li>
+                        <li>Advanced PCB design can become complex</li>
+                        <li>Component libraries sometimes need verification</li>
+                        <li>Physical manufacturing costs money</li>
+                        <li>High-speed designs require deeper knowledge</li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Comparison -->
+        <section class="section reveal">
+
+            <span class="section-number">17</span>
+
+            <h2>Tool Comparison</h2>
+
+            <div class="comparison-wrapper">
+
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th>Tool</th>
+                            <th>Main Purpose</th>
+                            <th>Open Source</th>
+                            <th>Best For</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td><strong>KiCad</strong></td>
+                            <td>Schematic + PCB</td>
+                            <td>✓</td>
+                            <td>Complete PCB design</td>
+                        </tr>
+
+                        <tr>
+                            <td><strong>ngspice</strong></td>
+                            <td>Circuit simulation</td>
+                            <td>✓</td>
+                            <td>Circuit analysis</td>
+                        </tr>
+
+                        <tr>
+                            <td><strong>Qucs-S</strong></td>
+                            <td>Circuit simulation</td>
+                            <td>✓</td>
+                            <td>Graphical simulation</td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+
+        <!-- Who should use which -->
+        <section class="section reveal">
+
+            <span class="section-number">18</span>
+
+            <h2>Who Should Use Which Tool?</h2>
+
+            <div class="choice-grid">
+
+                <div>
+                    <h3>🔰 Beginner PCB Designer</h3>
+                    <p>
+                        Start with <strong>KiCad</strong>.
+                        Learn schematic capture first, then PCB layout.
+                    </p>
+                </div>
+
+                <div>
+                    <h3>🧪 Circuit Simulation</h3>
+                    <p>
+                        Explore <strong>ngspice</strong> for analyzing
+                        circuit behavior.
+                    </p>
+                </div>
+
+                <div>
+                    <h3>📊 Visual Simulation</h3>
+                    <p>
+                        Try <strong>Qucs-S</strong> if you prefer
+                        a graphical simulation workflow.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Learning -->
+        <section class="section reveal" id="learn">
+
+            <span class="section-number">19</span>
+
+            <h2>🎓 LEARN THIS FIELD</h2>
+
+            <div class="learning-cards">
+
+                <div class="learning-card">
+
+                    <span class="learning-icon">🥇</span>
+
+                    <h3>Best Starting Point</h3>
+
+                    <a href="https://www.youtube.com/@EngineeringFunda" target="_blank">
+                        Engineering Funda
+                    </a>
+
+                    <p>→ Best for beginners</p>
+
+                </div>
+
+
+                <div class="learning-card">
+
+                    <span class="learning-icon">🔬</span>
+
+                    <h3>Go Deeper</h3>
+
+                    <a href="https://www.youtube.com/@Philslab" target="_blank">
+                        Phil's Lab
+                    </a>
+
+                    <p>→ More advanced / technical</p>
+
+                </div>
+
+
+                <div class="learning-card">
+
+                    <span class="learning-icon">🛠️</span>
+
+                    <h3>Practical Learning</h3>
+
+                    <a href="https://www.youtube.com/@ContextualElectronics" target="_blank">
+                        Contextual Electronics
+                    </a>
+
+                    <p>→ Projects and real-world applications</p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Learning Path -->
+        <section class="section reveal">
+
+            <span class="section-number">20</span>
+
+            <h2>Beginner → Advanced Learning Path</h2>
+
+            <div class="path">
+
+                <div class="path-step">
+                    <span>01</span>
+                    <div>
+                        <h3>Electrical Basics</h3>
+                        <p>
+                            Voltage, current, resistance, power and Ohm's Law.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="path-step">
+                    <span>02</span>
+                    <div>
+                        <h3>Basic Components</h3>
+                        <p>
+                            Resistors, capacitors, inductors, diodes and transistors.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="path-step">
+                    <span>03</span>
+                    <div>
+                        <h3>Digital Electronics</h3>
+                        <p>
+                            Binary, logic gates, flip-flops and digital circuits.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="path-step">
+                    <span>04</span>
+                    <div>
+                        <h3>Microcontrollers</h3>
+                        <p>
+                            Learn how hardware interacts with software.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="path-step">
+                    <span>05</span>
+                    <div>
+                        <h3>KiCad</h3>
+                        <p>
+                            Learn schematic capture and PCB layout.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="path-step">
+                    <span>06</span>
+                    <div>
+                        <h3>Real PCB Projects</h3>
+                        <p>
+                            Design, manufacture, assemble and test your own boards.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="path-step">
+                    <span>07</span>
+                    <div>
+                        <h3>Advanced Hardware</h3>
+                        <p>
+                            Explore high-speed signals, RF, power electronics
+                            and multilayer PCB design.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- First Projects -->
+        <section class="section reveal">
+
+            <span class="section-number">21</span>
+
+            <h2>First Project Ideas</h2>
+
+            <div class="project-list">
+
+                <div>
+                    <span>01</span>
+                    <strong>LED Flasher</strong>
+                    <p>Learn basic components and connections.</p>
+                </div>
+
+                <div>
+                    <span>02</span>
+                    <strong>Mini Sensor Board</strong>
+                    <p>Combine a sensor with a microcontroller.</p>
+                </div>
+
+                <div>
+                    <span>03</span>
+                    <strong>USB Power Board</strong>
+                    <p>Design a simple regulated power circuit.</p>
+                </div>
+
+                <div>
+                    <span>04</span>
+                    <strong>Mini Robot Controller</strong>
+                    <p>Create a custom board for controlling motors.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Careers -->
+        <section class="section reveal">
+
+            <span class="section-number">22</span>
+
+            <h2>Career Possibilities</h2>
+
+            <div class="career-grid">
+
+                <div>
+                    <span>⚡</span>
+                    <h3>Electronics Engineering</h3>
+                </div>
+
+                <div>
+                    <span>🧩</span>
+                    <h3>PCB Design</h3>
+                </div>
+
+                <div>
+                    <span>💻</span>
+                    <h3>Embedded Systems</h3>
+                </div>
+
+                <div>
+                    <span>🤖</span>
+                    <h3>Robotics</h3>
+                </div>
+
+                <div>
+                    <span>🚗</span>
+                    <h3>Automotive Electronics</h3>
+                </div>
+
+                <div>
+                    <span>🚀</span>
+                    <h3>Aerospace Electronics</h3>
+                </div>
+
+                <div>
+                    <span>📡</span>
+                    <h3>RF & Communication</h3>
+                </div>
+
+                <div>
+                    <span>🔋</span>
+                    <h3>Power Electronics</h3>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Related -->
+        <section class="section reveal">
+
+            <span class="section-number">23</span>
+
+            <h2>Related Fields</h2>
+
+            <div class="related">
+
+                <span>Embedded Systems</span>
+                <span>Robotics</span>
+                <span>Computer Engineering</span>
+                <span>Electrical Engineering</span>
+                <span>IoT</span>
+                <span>Programming</span>
+                <span>Control Systems</span>
+                <span>Signal Processing</span>
+
+            </div>
+
+        </section>
+
+
+        <!-- Facts -->
+        <section class="section reveal">
+
+            <span class="section-number">24</span>
+
+            <h2>Things People Often Don't Know</h2>
+
+            <div class="facts">
+
+                <div>
+                    <span>01</span>
+                    <p>
+                        A PCB is not simply a board with components.
+                        Its physical layout directly affects electrical behavior.
+                    </p>
+                </div>
+
+                <div>
+                    <span>02</span>
+                    <p>
+                        At high frequencies, even PCB traces can behave
+                        like transmission lines.
+                    </p>
+                </div>
+
+                <div>
+                    <span>03</span>
+                    <p>
+                        Good PCB design requires both electrical knowledge
+                        and physical/manufacturing awareness.
+                    </p>
+                </div>
+
+                <div>
+                    <span>04</span>
+                    <p>
+                        KiCad can be used for projects ranging from simple
+                        hobby boards to complex professional hardware.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- FAQ -->
+        <section class="section reveal">
+
+            <span class="section-number">25</span>
+
+            <h2>FAQ</h2>
+
+            <div class="faq">
+
+                <div class="faq-item">
+
+                    <button class="faq-question">
+                        Is KiCad really free?
+                        <span>+</span>
+                    </button>
+
+                    <div class="faq-answer">
+                        <p>
+                            Yes. KiCad is free and open-source software.
+                            You can use it to design electronic circuits
+                            and PCBs.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="faq-item">
+
+                    <button class="faq-question">
+                        Do I need electronics knowledge before learning KiCad?
+                        <span>+</span>
+                    </button>
+
+                    <div class="faq-answer">
+                        <p>
+                            You can learn the interface first, but understanding
+                            basic electronics will make KiCad much easier to use.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="faq-item">
+
+                    <button class="faq-question">
+                        Can KiCad simulate circuits?
+                        <span>+</span>
+                    </button>
+
+                    <div class="faq-answer">
+                        <p>
+                            KiCad can integrate with circuit simulation tools,
+                            while dedicated SPICE tools such as ngspice are
+                            commonly used for detailed simulation.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="faq-item">
+
+                    <button class="faq-question">
+                        Can I manufacture a PCB designed in KiCad?
+                        <span>+</span>
+                    </button>
+
+                    <div class="faq-answer">
+                        <p>
+                            Yes. KiCad can generate manufacturing files that
+                            PCB manufacturers can use to produce your board.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="faq-item">
+
+                    <button class="faq-question">
+                        Is PCB design useful for robotics?
+                        <span>+</span>
+                    </button>
+
+                    <div class="faq-answer">
+                        <p>
+                            Absolutely. Custom PCBs can combine sensors,
+                            microcontrollers, motor drivers, power circuits
+                            and communication hardware into one board.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Summary -->
+        <section class="section reveal">
+
+            <span class="section-number">26</span>
+
+            <h2>Quick Summary</h2>
+
+            <div class="summary">
+
+                <div>
+                    <b>Field</b>
+                    <span>Electronics & PCB Design</span>
+                </div>
+
+                <div>
+                    <b>Featured Tool</b>
+                    <span>KiCad</span>
+                </div>
+
+                <div>
+                    <b>License</b>
+                    <span>Open Source</span>
+                </div>
+
+                <div>
+                    <b>Best Starting Point</b>
+                    <span>Basic Electronics + KiCad</span>
+                </div>
+
+                <div>
+                    <b>Difficulty</b>
+                    <span>Beginner → Advanced</span>
+                </div>
+
+                <div>
+                    <b>Best For</b>
+                    <span>Hardware, PCB & Electronics Projects</span>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Explore -->
+        <section class="explore reveal" id="explore">
+
+            <div>
+
+                <span class="section-number">NEXT</span>
+
+                <h2>Explore Next</h2>
+
+                <p>
+                    Continue exploring the free and open-source world.
+                </p>
+
+            </div>
+
+            <div class="explore-links">
+
+                <a href="ollama.html">← Local AI</a>
+
+                <a href="education.html">🎓 Student Learning Hub</a>
+
+                <a href="editing.html">Multimedia Creation & Editing →</a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <div class="footer-inner">
+
+            <div>
+                <strong>OpenField</strong>
+                <p>
+                    Exploring powerful free and open-source tools.
+                </p>
+            </div>
+
+            <p>Built for curious minds.</p>
+
+        </div>
+
+    </footer>
+
+
+    <button class="back-top" id="backTop">
+        ↑
+    </button>
+
+
+    <script src="../fields/kicad.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,715 @@
+/* ========================================
+   GLOBAL
+======================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #0b0b10;
+    color: #e8e8ef;
+    line-height: 1.7;
+}
+
+/* ========================================
+   HEADER
+======================================== */
+
+header {
+    min-height: 420px;
+    padding: 100px 20px 80px;
+    text-align: center;
+
+    background:
+        radial-gradient(circle at 20% 20%, #7c3aed55, transparent 35%),
+        radial-gradient(circle at 80% 30%, #06b6d455, transparent 35%),
+        linear-gradient(135deg, #11111a, #09090d);
+
+    border-bottom: 1px solid #272733;
+}
+
+header h1 {
+    font-size: clamp(2.5rem, 7vw, 5.5rem);
+    font-weight: 800;
+    letter-spacing: -3px;
+
+    background: linear-gradient(
+        90deg,
+        #ffffff,
+        #a78bfa,
+        #22d3ee
+    );
+
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+
+    margin-bottom: 20px;
+}
+
+header p {
+    max-width: 700px;
+    margin: auto;
+
+    font-size: 1.2rem;
+    color: #a7a7b5;
+}
+
+/* ========================================
+   MAIN CONTAINER
+======================================== */
+
+main {
+    width: min(1100px, 92%);
+    margin: 60px auto;
+}
+
+/* ========================================
+   SECTIONS
+======================================== */
+
+section {
+    margin-bottom: 35px;
+    padding: 35px;
+
+    background: #12121a;
+
+    border: 1px solid #252532;
+    border-radius: 20px;
+
+    box-shadow: 0 15px 40px #00000030;
+
+    transition: 0.3s ease;
+}
+
+section:hover {
+    border-color: #44445c;
+    transform: translateY(-2px);
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+
+    color: #ffffff;
+}
+
+section h2::before {
+    content: "";
+    display: inline-block;
+
+    width: 5px;
+    height: 28px;
+
+    margin-right: 12px;
+
+    background: linear-gradient(
+        #8b5cf6,
+        #22d3ee
+    );
+
+    border-radius: 10px;
+    vertical-align: -3px;
+}
+
+section h3 {
+    margin-top: 25px;
+    margin-bottom: 10px;
+
+    color: #c4b5fd;
+    font-size: 1.25rem;
+}
+
+/* ========================================
+   TEXT
+======================================== */
+
+p {
+    color: #b8b8c7;
+    margin-bottom: 15px;
+}
+
+strong {
+    color: #ffffff;
+}
+
+em {
+    color: #c4b5fd;
+}
+
+/* ========================================
+   LISTS
+======================================== */
+
+ul,
+ol {
+    margin: 15px 0 15px 25px;
+}
+
+li {
+    margin: 8px 0;
+    color: #bdbdca;
+}
+
+li::marker {
+    color: #8b5cf6;
+}
+
+/* ========================================
+   ARTICLES / TOOL CARDS
+======================================== */
+
+article {
+    margin-top: 25px;
+    padding: 25px;
+
+    background: #181822;
+
+    border: 1px solid #292936;
+    border-radius: 16px;
+
+    transition: all 0.3s ease;
+}
+
+article:hover {
+    transform: translateY(-5px);
+
+    border-color: #8b5cf6;
+
+    box-shadow:
+        0 10px 35px #8b5cf625;
+}
+
+article h3 {
+    color: #ffffff;
+    margin-top: 0;
+}
+
+/* ========================================
+   FEATURED TOOL
+======================================== */
+
+article.featured {
+    background:
+        radial-gradient(
+            circle at top right,
+            #8b5cf620,
+            transparent 40%
+        ),
+        #171720;
+
+    border: 1px solid #6d28d9;
+}
+
+article.featured h3 {
+    font-size: 1.7rem;
+    color: #a78bfa;
+}
+
+/* ========================================
+   CODE / DIAGRAM
+======================================== */
+
+pre {
+    margin: 25px 0;
+    padding: 25px;
+
+    overflow-x: auto;
+
+    background: #08080c;
+
+    border: 1px solid #292936;
+    border-radius: 14px;
+
+    box-shadow: inset 0 0 30px #00000040;
+}
+
+code {
+    font-family:
+        "Cascadia Code",
+        "Fira Code",
+        Consolas,
+        monospace;
+
+    color: #c4b5fd;
+    font-size: 0.95rem;
+}
+
+/* ========================================
+   TABLE
+======================================== */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+
+    margin-top: 25px;
+
+    overflow: hidden;
+
+    border-radius: 12px;
+    border: 1px solid #292936;
+}
+
+thead {
+    background: linear-gradient(
+        90deg,
+        #6d28d9,
+        #0891b2
+    );
+}
+
+th {
+    color: white;
+    font-weight: 700;
+    padding: 16px;
+    text-align: left;
+}
+
+td {
+    padding: 15px;
+
+    color: #c4c4d0;
+
+    border-top: 1px solid #292936;
+}
+
+tbody tr {
+    background: #15151d;
+    transition: 0.2s ease;
+}
+
+tbody tr:nth-child(even) {
+    background: #191922;
+}
+
+tbody tr:hover {
+    background: #252535;
+}
+
+/* ========================================
+   LINKS
+======================================== */
+
+a {
+    color: #a78bfa;
+    text-decoration: none;
+
+    transition: 0.2s ease;
+}
+
+a:hover {
+    color: #67e8f9;
+    text-decoration: underline;
+}
+
+/* ========================================
+   LEARNING SECTION
+======================================== */
+
+section:has(h2) h2 {
+    scroll-margin-top: 30px;
+}
+
+/* Highlight emoji headings */
+
+section p:first-letter {
+    /* keeps normal text appearance */
+}
+
+/* ========================================
+   TAG / BADGE STYLE
+======================================== */
+
+.badge {
+    display: inline-block;
+
+    padding: 5px 12px;
+
+    margin: 4px;
+
+    border-radius: 50px;
+
+    background: #8b5cf620;
+    border: 1px solid #8b5cf650;
+
+    color: #c4b5fd;
+
+    font-size: 0.85rem;
+}
+
+/* ========================================
+   FOOTER
+======================================== */
+
+footer {
+    padding: 50px 20px;
+
+    text-align: center;
+
+    background: #08080c;
+
+    border-top: 1px solid #252532;
+
+    color: #777783;
+}
+
+footer p {
+    color: #777783;
+}
+
+/* ========================================
+   SELECTION
+======================================== */
+
+::selection {
+    background: #8b5cf6;
+    color: white;
+}
+
+/* ========================================
+   SCROLLBAR
+======================================== */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #08080c;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(
+        #7c3aed,
+        #0891b2
+    );
+
+    border-radius: 10px;
+}
+
+/* ========================================
+   RESPONSIVE
+======================================== */
+
+@media (max-width: 768px) {
+
+    header {
+        min-height: 350px;
+        padding: 80px 20px 60px;
+    }
+
+    header h1 {
+        letter-spacing: -1.5px;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    main {
+        width: 94%;
+        margin: 30px auto;
+    }
+
+    section {
+        padding: 22px;
+        border-radius: 15px;
+    }
+
+    section h2 {
+        font-size: 1.5rem;
+    }
+
+    article {
+        padding: 20px;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    pre {
+        padding: 18px;
+    }
+}
+
+/* ========================================
+   SMALL MOBILE
+======================================== */
+
+@media (max-width: 480px) {
+
+    header {
+        padding: 65px 15px 50px;
+    }
+
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    main {
+        width: 95%;
+    }
+
+    section {
+        padding: 18px;
+    }
+
+    section h2 {
+        font-size: 1.35rem;
+    }
+
+    article {
+        padding: 16px;
+    }
+
+    p,
+    li {
+        font-size: 0.95rem;
+    }
+}
+/* ================================
+   CONTROLS
+================================ */
+
+.controls {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+
+    display: flex;
+    gap: 10px;
+
+    z-index: 1000;
+}
+
+.controls button {
+    border: 1px solid #44445c;
+
+    background: #15151d;
+    color: white;
+
+    padding: 10px 15px;
+
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    font-size: 14px;
+
+    transition: 0.3s;
+}
+
+.controls button:hover {
+    background: #8b5cf6;
+    transform: translateY(-2px);
+}
+
+#topBtn {
+    width: 42px;
+    height: 42px;
+
+    padding: 0;
+
+    font-size: 20px;
+
+    display: none;
+}
+
+/* ================================
+   READING PROGRESS
+================================ */
+
+#progressBar {
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    height: 4px;
+    width: 0%;
+
+    background: linear-gradient(
+        90deg,
+        #8b5cf6,
+        #06b6d4
+    );
+
+    z-index: 2000;
+}
+
+/* ================================
+   SEARCH
+================================ */
+
+.search-box {
+    width: min(700px, 90%);
+
+    margin: -30px auto 50px;
+
+    position: relative;
+    z-index: 10;
+}
+
+#searchInput {
+    width: 100%;
+
+    padding: 17px 22px;
+
+    border-radius: 50px;
+
+    border: 1px solid #333344;
+
+    background: #171720;
+
+    color: white;
+
+    outline: none;
+
+    font-size: 16px;
+
+    box-shadow:
+        0 10px 40px #00000050;
+
+    transition: 0.3s;
+}
+
+#searchInput:focus {
+    border-color: #8b5cf6;
+
+    box-shadow:
+        0 0 25px #8b5cf640;
+}
+
+#searchInput::placeholder {
+    color: #777783;
+}
+
+/* ================================
+   SEARCH HIGHLIGHT
+================================ */
+
+.search-match {
+    border-color: #8b5cf6 !important;
+
+    box-shadow:
+        0 0 25px #8b5cf630 !important;
+}
+
+/* ================================
+   SCROLL REVEAL
+================================ */
+
+.reveal {
+    opacity: 0;
+
+    transform: translateY(30px);
+
+    transition:
+        opacity 0.7s ease,
+        transform 0.7s ease;
+}
+
+.reveal.show {
+    opacity: 1;
+
+    transform: translateY(0);
+}
+
+/* ================================
+   LIGHT MODE
+================================ */
+
+body.light {
+    background: #f5f5f7;
+
+    color: #202027;
+}
+
+body.light header {
+    background:
+        radial-gradient(
+            circle at 20% 20%,
+            #c4b5fd,
+            transparent 35%
+        ),
+        radial-gradient(
+            circle at 80% 30%,
+            #a5f3fc,
+            transparent 35%
+        ),
+        #ffffff;
+}
+
+body.light header h1 {
+    background: linear-gradient(
+        90deg,
+        #111827,
+        #7c3aed,
+        #0891b2
+    );
+
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+body.light section {
+    background: white;
+
+    border-color: #ddddE5;
+
+    box-shadow:
+        0 10px 30px #0000000d;
+}
+
+body.light p,
+body.light li {
+    color: #555563;
+}
+
+body.light article {
+    background: #f8f8fb;
+
+    border-color: #ddddE5;
+}
+
+body.light article.featured {
+    background: #f5f0ff;
+}
+
+body.light pre {
+    background: #17171d;
+}
+
+body.light table {
+    border-color: #ddddE5;
+}
+
+body.light tbody tr {
+    background: white;
+}
+
+body.light tbody tr:nth-child(even) {
+    background: #f7f7fa;
+}
+
+body.light .controls button {
+    background: white;
+    color: #222;
+}
+
+body.light #searchInput {
+    background: white;
+    color: #222;
+}

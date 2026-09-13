@@ -1,0 +1,1649 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Physics, Simulation & Computational Science</title>
+  <meta
+    name="description"
+    content="Explore physics simulations, computational science, fluid dynamics, aerospace simulation and complex systems using free and open-source tools."
+  >
+
+  <link rel="stylesheet" href="../css/physics.css">
+</head>
+
+<body>
+
+  <!-- Reading Progress -->
+  <div class="progress-bar" id="progressBar"></div>
+
+  <!-- Header -->
+  <header class="topbar">
+    <div class="nav-container">
+
+      <a href="index.html" class="logo">
+        <span class="logo-dot"></span>
+        Field Explorer
+      </a>
+
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="fields.html">Fields</a>
+        <a href="education.html">Education</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="searchBtn" class="icon-btn" aria-label="Search">
+          🔍
+        </button>
+
+        <button id="themeBtn" class="icon-btn" aria-label="Toggle theme">
+          ☀️
+        </button>
+
+        <button id="menuBtn" class="menu-btn" aria-label="Open menu">
+          ☰
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+
+  <!-- Search -->
+  <div class="search-overlay" id="searchOverlay">
+    <div class="search-box">
+      <div class="search-header">
+        <h3>Search this field</h3>
+        <button id="closeSearch">✕</button>
+      </div>
+
+      <input
+        type="text"
+        id="searchInput"
+        placeholder="Search physics, simulation, tools..."
+      >
+
+      <p class="search-hint">
+        Press <kbd>Esc</kbd> to close
+      </p>
+    </div>
+  </div>
+
+
+  <main>
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-grid">
+
+        <div class="hero-content">
+
+          <div class="badge">
+            ⚛️ Physics & Computational Science
+          </div>
+
+          <h1>
+            Physics, Simulation
+            <span>& Computational Science</span>
+          </h1>
+
+          <p class="hero-subtitle">
+            Understand how the physical world behaves by turning
+            mathematical models into interactive simulations.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#tools" class="btn primary">
+              Explore Tools
+            </a>
+
+            <a href="#learning" class="btn secondary">
+              Start Learning
+            </a>
+          </div>
+
+        </div>
+
+        <div class="hero-visual">
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+          <div class="orbit orbit-three"></div>
+
+          <div class="physics-core">
+            <span>F</span>
+            <small>= ma</small>
+          </div>
+
+          <div class="floating-formula formula-one">
+            E = mc²
+          </div>
+
+          <div class="floating-formula formula-two">
+            ∇ · v = 0
+          </div>
+
+          <div class="floating-formula formula-three">
+            F = Gm₁m₂/r²
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- Field Definition -->
+    <section class="section">
+      <div class="section-heading">
+        <span class="section-number">01</span>
+        <div>
+          <p class="eyebrow">THE FIELD</p>
+          <h2>What is this field?</h2>
+        </div>
+      </div>
+
+      <div class="definition-card">
+        <div class="definition-icon">⚛️</div>
+
+        <div>
+          <h3>Physics + Mathematics + Computing</h3>
+
+          <p>
+            Computational physics uses mathematics, algorithms and
+            computers to model physical systems that may be difficult,
+            expensive or impossible to study directly in the real world.
+          </p>
+
+          <p>
+            Instead of only solving equations on paper, you can build
+            simulations that show how particles, fluids, spacecraft,
+            forces, waves and complex systems behave over time.
+          </p>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Why -->
+    <section class="section">
+      <div class="section-heading">
+        <span class="section-number">02</span>
+        <div>
+          <p class="eyebrow">WHY IT MATTERS</p>
+          <h2>Why does this field matter?</h2>
+        </div>
+      </div>
+
+      <div class="card-grid three">
+
+        <article class="info-card">
+          <div class="card-icon">🔬</div>
+          <h3>Understand Complex Systems</h3>
+          <p>
+            Computers can model systems containing thousands or
+            millions of interacting variables.
+          </p>
+        </article>
+
+        <article class="info-card">
+          <div class="card-icon">🚀</div>
+          <h3>Test Without Building</h3>
+          <p>
+            Simulations allow engineers and scientists to test ideas
+            before spending resources on physical experiments.
+          </p>
+        </article>
+
+        <article class="info-card">
+          <div class="card-icon">🧠</div>
+          <h3>See Mathematics in Action</h3>
+          <p>
+            Equations become moving particles, flowing fluids,
+            trajectories, waves and visual models.
+          </p>
+        </article>
+
+      </div>
+    </section>
+
+
+    <!-- What Can You Do -->
+    <section class="section">
+      <div class="section-heading">
+        <span class="section-number">03</span>
+        <div>
+          <p class="eyebrow">POSSIBILITIES</p>
+          <h2>What can you do with it?</h2>
+        </div>
+      </div>
+
+      <div class="tag-grid">
+
+        <span>🌊 Fluid simulations</span>
+        <span>🚀 Rocket trajectories</span>
+        <span>🪐 Orbital mechanics</span>
+        <span>⚡ Electromagnetism</span>
+        <span>🌡️ Heat transfer</span>
+        <span>🌊 Wave propagation</span>
+        <span>💥 Particle interactions</span>
+        <span>🌌 Astrophysics models</span>
+        <span>🧬 Biological systems</span>
+        <span>🌱 Ecosystem models</span>
+        <span>🤖 Artificial life</span>
+        <span>📊 System dynamics</span>
+
+      </div>
+    </section>
+
+
+    <!-- Applications -->
+    <section class="section">
+      <div class="section-heading">
+        <span class="section-number">04</span>
+        <div>
+          <p class="eyebrow">REAL WORLD</p>
+          <h2>Real-world applications</h2>
+        </div>
+      </div>
+
+      <div class="application-grid">
+
+        <article>
+          <span>✈️</span>
+          <h3>Aerospace</h3>
+          <p>
+            Aircraft, rockets, orbital trajectories and atmospheric
+            behaviour can be studied through simulation.
+          </p>
+        </article>
+
+        <article>
+          <span>🏎️</span>
+          <h3>Engineering</h3>
+          <p>
+            Engineers simulate forces, heat, fluids, structures and
+            mechanical systems before manufacturing.
+          </p>
+        </article>
+
+        <article>
+          <span>🌊</span>
+          <h3>Fluid Dynamics</h3>
+          <p>
+            Computational fluid dynamics helps study airflow,
+            turbulence, water flow and other fluid systems.
+          </p>
+        </article>
+
+        <article>
+          <span>🌌</span>
+          <h3>Astronomy</h3>
+          <p>
+            Scientists model planetary systems, galaxies, stars and
+            gravitational interactions.
+          </p>
+        </article>
+
+        <article>
+          <span>🧬</span>
+          <h3>Biology</h3>
+          <p>
+            Mathematical models can represent population dynamics,
+            cellular systems and biological processes.
+          </p>
+        </article>
+
+        <article>
+          <span>🏭</span>
+          <h3>Industrial Research</h3>
+          <p>
+            Simulation reduces the need for expensive physical
+            prototypes and repeated experiments.
+          </p>
+        </article>
+
+      </div>
+    </section>
+
+
+    <!-- People -->
+    <section class="section">
+      <div class="section-heading">
+        <span class="section-number">05</span>
+        <div>
+          <p class="eyebrow">PEOPLE</p>
+          <h2>Who works in this field?</h2>
+        </div>
+      </div>
+
+      <div class="people-list">
+
+        <div class="person">
+          <strong>Computational Physicist</strong>
+          <span>Builds mathematical and numerical models of physical systems.</span>
+        </div>
+
+        <div class="person">
+          <strong>Simulation Engineer</strong>
+          <span>Creates computer simulations for engineering problems.</span>
+        </div>
+
+        <div class="person">
+          <strong>Aerospace Engineer</strong>
+          <span>Uses physics and simulation to study aircraft and spacecraft.</span>
+        </div>
+
+        <div class="person">
+          <strong>Research Scientist</strong>
+          <span>Uses computational models to investigate scientific questions.</span>
+        </div>
+
+        <div class="person">
+          <strong>Data / Scientific Programmer</strong>
+          <span>Develops software for scientific calculations and experiments.</span>
+        </div>
+
+        <div class="person">
+          <strong>Systems Scientist</strong>
+          <span>Studies interactions between many components of complex systems.</span>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- Core Concepts -->
+    <section class="section dark-section">
+      <div class="section-heading">
+        <span class="section-number">06</span>
+        <div>
+          <p class="eyebrow">FOUNDATIONS</p>
+          <h2>Core concepts to understand</h2>
+        </div>
+      </div>
+
+      <div class="concept-grid">
+
+        <div class="concept">
+          <span>01</span>
+          <h3>Classical Mechanics</h3>
+          <p>
+            Motion, force, momentum, energy and Newton's laws.
+          </p>
+        </div>
+
+        <div class="concept">
+          <span>02</span>
+          <h3>Calculus</h3>
+          <p>
+            Derivatives, integrals and differential equations describe
+            changing physical systems.
+          </p>
+        </div>
+
+        <div class="concept">
+          <span>03</span>
+          <h3>Linear Algebra</h3>
+          <p>
+            Vectors and matrices are fundamental to many simulations.
+          </p>
+        </div>
+
+        <div class="concept">
+          <span>04</span>
+          <h3>Differential Equations</h3>
+          <p>
+            Equations that describe how physical quantities change.
+          </p>
+        </div>
+
+        <div class="concept">
+          <span>05</span>
+          <h3>Numerical Methods</h3>
+          <p>
+            Techniques for obtaining approximate solutions using computers.
+          </p>
+        </div>
+
+        <div class="concept">
+          <span>06</span>
+          <h3>Algorithms</h3>
+          <p>
+            Step-by-step computational procedures used to solve problems.
+          </p>
+        </div>
+
+        <div class="concept">
+          <span>07</span>
+          <h3>Probability</h3>
+          <p>
+            Important for uncertainty, statistical physics and stochastic systems.
+          </p>
+        </div>
+
+        <div class="concept">
+          <span>08</span>
+          <h3>Modelling</h3>
+          <p>
+            Converting a real-world system into mathematical rules.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- Tools -->
+    <section class="section" id="tools">
+
+      <div class="section-heading">
+        <span class="section-number">07</span>
+        <div>
+          <p class="eyebrow">OPEN SOURCE</p>
+          <h2>Best Free & Open-Source Tools</h2>
+        </div>
+      </div>
+
+      <div class="tool-table-wrapper">
+
+        <table class="tool-table">
+
+          <thead>
+            <tr>
+              <th>Tool</th>
+              <th>Best For</th>
+              <th>Difficulty</th>
+              <th>Platform</th>
+            </tr>
+          </thead>
+
+          <tbody>
+
+            <tr>
+              <td>
+                <strong>PhysicsSims</strong>
+              </td>
+              <td>Interactive physics simulations</td>
+              <td>Beginner</td>
+              <td>Web</td>
+            </tr>
+
+            <tr>
+              <td>
+                <strong>Lattice</strong>
+              </td>
+              <td>Fluid dynamics & scientific simulation</td>
+              <td>Advanced</td>
+              <td>Web / Open Source</td>
+            </tr>
+
+            <tr>
+              <td>
+                <strong>LaunchSim</strong>
+              </td>
+              <td>Rocket & aerospace simulation</td>
+              <td>Intermediate</td>
+              <td>Web</td>
+            </tr>
+
+            <tr>
+              <td>
+                <strong>GNU Octave</strong>
+              </td>
+              <td>Numerical computing & mathematical modelling</td>
+              <td>Intermediate</td>
+              <td>Windows / Linux / macOS</td>
+            </tr>
+
+            <tr>
+              <td>
+                <strong>Python</strong>
+              </td>
+              <td>Scientific programming & custom simulations</td>
+              <td>Beginner → Advanced</td>
+              <td>Windows / Linux / macOS</td>
+            </tr>
+
+            <tr>
+              <td>
+                <strong>ParaView</strong>
+              </td>
+              <td>Scientific data visualization</td>
+              <td>Advanced</td>
+              <td>Windows / Linux / macOS</td>
+            </tr>
+
+          </tbody>
+
+        </table>
+
+      </div>
+    </section>
+
+
+    <!-- Featured Tools -->
+    <section class="section" id="featured">
+
+      <div class="section-heading">
+        <span class="section-number">08</span>
+        <div>
+          <p class="eyebrow">FEATURED TOOLS</p>
+          <h2>Tools worth exploring</h2>
+        </div>
+      </div>
+
+      <div class="featured-grid">
+
+        <article class="featured-tool">
+
+          <div class="tool-logo">⚙️</div>
+
+          <div class="tool-content">
+
+            <span class="tool-label">NUMERICAL COMPUTING</span>
+
+            <h3>GNU Octave</h3>
+
+            <p>
+              A free and open-source mathematical programming
+              environment designed for numerical calculations.
+            </p>
+
+            <h4>What exactly does it do?</h4>
+
+            <p>
+              Octave lets you work with vectors, matrices, equations,
+              graphs and numerical algorithms. It is especially useful
+              when you want to translate mathematical ideas into code.
+            </p>
+
+            <h4>How does it work?</h4>
+
+            <p>
+              You provide mathematical expressions or algorithms.
+              Octave calculates the results and can visualize the data
+              using graphs and plots.
+            </p>
+
+            <div class="code-example">
+              <code>
+                t = 0:0.01:10;<br>
+                y = sin(t);<br>
+                plot(t, y);
+              </code>
+            </div>
+
+          </div>
+
+        </article>
+
+
+        <article class="featured-tool">
+
+          <div class="tool-logo">🌊</div>
+
+          <div class="tool-content">
+
+            <span class="tool-label">FLUID DYNAMICS</span>
+
+            <h3>Lattice</h3>
+
+            <p>
+              A computational environment for exploring fluid
+              behaviour and numerical simulation concepts.
+            </p>
+
+            <h4>What can you study?</h4>
+
+            <p>
+              You can explore how fluids move, interact and change
+              under different conditions using computational models.
+            </p>
+
+          </div>
+
+        </article>
+
+
+        <article class="featured-tool">
+
+          <div class="tool-logo">🚀</div>
+
+          <div class="tool-content">
+
+            <span class="tool-label">AEROSPACE</span>
+
+            <h3>LaunchSim</h3>
+
+            <p>
+              A simulation-oriented environment for understanding
+              rocket launches, trajectories and aerospace concepts.
+            </p>
+
+            <h4>What can you explore?</h4>
+
+            <p>
+              Experiment with concepts such as thrust, gravity,
+              velocity, altitude and trajectory.
+            </p>
+
+          </div>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- Simplified Workflow -->
+    <section class="section">
+
+      <div class="section-heading">
+        <span class="section-number">09</span>
+        <div>
+          <p class="eyebrow">HOW IT WORKS</p>
+          <h2>From reality to simulation</h2>
+        </div>
+      </div>
+
+      <div class="workflow">
+
+        <div class="workflow-step">
+          <div class="step-number">01</div>
+          <h3>Observe</h3>
+          <p>
+            Identify what is happening in the real system.
+          </p>
+        </div>
+
+        <div class="workflow-arrow">→</div>
+
+        <div class="workflow-step">
+          <div class="step-number">02</div>
+          <h3>Model</h3>
+          <p>
+            Convert the important behaviour into mathematical rules.
+          </p>
+        </div>
+
+        <div class="workflow-arrow">→</div>
+
+        <div class="workflow-step">
+          <div class="step-number">03</div>
+          <h3>Compute</h3>
+          <p>
+            Use numerical algorithms to solve the model.
+          </p>
+        </div>
+
+        <div class="workflow-arrow">→</div>
+
+        <div class="workflow-step">
+          <div class="step-number">04</div>
+          <h3>Visualize</h3>
+          <p>
+            Turn the results into graphs, animations or simulations.
+          </p>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- Projects -->
+    <section class="section">
+
+      <div class="section-heading">
+        <span class="section-number">10</span>
+        <div>
+          <p class="eyebrow">PROJECTS</p>
+          <h2>What can you build?</h2>
+        </div>
+      </div>
+
+      <div class="project-grid">
+
+        <article class="project-card beginner">
+          <span class="level">BEGINNER</span>
+          <h3>Projectile Simulator</h3>
+          <p>
+            Simulate the path of a ball using velocity, gravity
+            and launch angle.
+          </p>
+          <div class="project-tags">
+            <span>Physics</span>
+            <span>Math</span>
+          </div>
+        </article>
+
+        <article class="project-card beginner">
+          <span class="level">BEGINNER</span>
+          <h3>Solar System Model</h3>
+          <p>
+            Create a simplified orbital simulation of planets
+            around a star.
+          </p>
+          <div class="project-tags">
+            <span>Gravity</span>
+            <span>Orbits</span>
+          </div>
+        </article>
+
+        <article class="project-card intermediate">
+          <span class="level">INTERMEDIATE</span>
+          <h3>Double Pendulum</h3>
+          <p>
+            Model the motion of a double pendulum and observe
+            chaotic behaviour.
+          </p>
+          <div class="project-tags">
+            <span>Dynamics</span>
+            <span>Chaos</span>
+          </div>
+        </article>
+
+        <article class="project-card intermediate">
+          <span class="level">INTERMEDIATE</span>
+          <h3>Fluid Flow Simulation</h3>
+          <p>
+            Experiment with numerical models that approximate
+            how fluids move.
+          </p>
+          <div class="project-tags">
+            <span>Fluids</span>
+            <span>Numerical Methods</span>
+          </div>
+        </article>
+
+        <article class="project-card advanced">
+          <span class="level">ADVANCED</span>
+          <h3>Rocket Trajectory Simulator</h3>
+          <p>
+            Model changing velocity, gravity, thrust and altitude
+            during a rocket flight.
+          </p>
+          <div class="project-tags">
+            <span>Aerospace</span>
+            <span>Simulation</span>
+          </div>
+        </article>
+
+        <article class="project-card advanced">
+          <span class="level">ADVANCED</span>
+          <h3>Complex System Model</h3>
+          <p>
+            Build a system containing many interacting agents
+            and study emergent behaviour.
+          </p>
+          <div class="project-tags">
+            <span>Complexity</span>
+            <span>Systems</span>
+          </div>
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- Difficulty -->
+    <section class="section">
+
+      <div class="section-heading">
+        <span class="section-number">11</span>
+        <div>
+          <p class="eyebrow">DIFFICULTY</p>
+          <h2>How difficult is it?</h2>
+        </div>
+      </div>
+
+      <div class="difficulty-card">
+
+        <div class="difficulty-level">
+          <span>Overall Difficulty</span>
+          <strong>★★★★☆</strong>
+        </div>
+
+        <p>
+          Basic simulations can be beginner-friendly, but serious
+          computational physics requires strong mathematics,
+          physics and programming.
+        </p>
+
+        <div class="difficulty-bar">
+          <div></div>
+        </div>
+
+        <div class="difficulty-labels">
+          <span>Beginner</span>
+          <span>Intermediate</span>
+          <span>Advanced</span>
+          <span>Research</span>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- Hardware -->
+    <section class="section">
+
+      <div class="section-heading">
+        <span class="section-number">12</span>
+        <div>
+          <p class="eyebrow">REQUIREMENTS</p>
+          <h2>Hardware requirements</h2>
+        </div>
+      </div>
+
+      <div class="hardware-grid">
+
+        <div class="hardware-card">
+          <span>💻</span>
+          <h3>Beginner</h3>
+          <p>
+            A normal modern laptop is enough for basic physics
+            simulations and numerical experiments.
+          </p>
+        </div>
+
+        <div class="hardware-card">
+          <span>🖥️</span>
+          <h3>Intermediate</h3>
+          <p>
+            More RAM and CPU power becomes useful for larger
+            simulations and scientific visualization.
+          </p>
+        </div>
+
+        <div class="hardware-card">
+          <span>⚡</span>
+          <h3>Advanced</h3>
+          <p>
+            Large simulations may require powerful CPUs,
+            GPUs or high-performance computing systems.
+          </p>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- OS -->
+    <section class="section">
+
+      <div class="section-heading">
+        <span class="section-number">13</span>
+        <div>
+          <p class="eyebrow">COMPATIBILITY</p>
+          <h2>Operating-system support</h2>
+        </div>
+      </div>
+
+      <div class="os-grid">
+
+        <div>
+          <strong>Windows</strong>
+          <span>✓ Supported</span>
+        </div>
+
+        <div>
+          <strong>Linux</strong>
+          <span>✓ Excellent support</span>
+        </div>
+
+        <div>
+          <strong>macOS</strong>
+          <span>✓ Supported by many tools</span>
+        </div>
+
+        <div>
+          <strong>Web</strong>
+          <span>✓ Several interactive tools</span>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- Advantages -->
+    <section class="section">
+
+      <div class="section-heading">
+        <span class="section-number">14</span>
+        <div>
+          <p class="eyebrow">PROS & CONS</p>
+          <h2>Advantages & limitations</h2>
+        </div>
+      </div>
+
+      <div class="pros-cons">
+
+        <div class="pros">
+          <h3>✓ Advantages</h3>
+
+          <ul>
+            <li>Can explore systems without physical experiments</li>
+            <li>Can repeat experiments quickly</li>
+            <li>Works with very complex mathematical models</li>
+            <li>Useful across science and engineering</li>
+            <li>Can visualize invisible physical processes</li>
+            <li>Open-source tools can be free to use</li>
+          </ul>
+        </div>
+
+        <div class="cons">
+          <h3>⚠ Limitations</h3>
+
+          <ul>
+            <li>A simulation is an approximation of reality</li>
+            <li>Incorrect assumptions produce incorrect results</li>
+            <li>Advanced simulations can require powerful hardware</li>
+            <li>Mathematics can become highly advanced</li>
+            <li>Large simulations can take significant computing time</li>
+          </ul>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- Alternatives -->
+    <section class="section">
+
+      <div class="section-heading">
+        <span class="section-number">15</span>
+        <div>
+          <p class="eyebrow">ALTERNATIVES</p>
+          <h2>Other tools worth knowing</h2>
+        </div>
+      </div>
+
+      <div class="alternative-grid">
+
+        <div>
+          <h3>Python</h3>
+          <p>
+            Excellent for creating custom scientific simulations
+            using libraries such as NumPy, SciPy and Matplotlib.
+          </p>
+        </div>
+
+        <div>
+          <h3>ParaView</h3>
+          <p>
+            Powerful open-source software for visualizing large
+            scientific datasets.
+          </p>
+        </div>
+
+        <div>
+          <h3>Blender</h3>
+          <p>
+            Useful when scientific or physical simulations need
+            advanced 3D visualization.
+          </p>
+        </div>
+
+        <div>
+          <h3>GNU Octave</h3>
+          <p>
+            A strong starting point for numerical mathematics
+            and MATLAB-like scientific computing.
+          </p>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- Comparison -->
+    <section class="section">
+
+      <div class="section-heading">
+        <span class="section-number">16</span>
+        <div>
+          <p class="eyebrow">COMPARE</p>
+          <h2>Tool comparison</h2>
+        </div>
+      </div>
+
+      <div class="tool-table-wrapper">
+
+        <table class="tool-table comparison">
+
+          <thead>
+            <tr>
+              <th>Tool</th>
+              <th>Learning</th>
+              <th>Simulation</th>
+              <th>Programming</th>
+              <th>Visualization</th>
+            </tr>
+          </thead>
+
+          <tbody>
+
+            <tr>
+              <td><strong>GNU Octave</strong></td>
+              <td>Easy → Medium</td>
+              <td>★★★★☆</td>
+              <td>★★★★★</td>
+              <td>★★★★☆</td>
+            </tr>
+
+            <tr>
+              <td><strong>Python</strong></td>
+              <td>Easy → Advanced</td>
+              <td>★★★★★</td>
+              <td>★★★★★</td>
+              <td>★★★★★</td>
+            </tr>
+
+            <tr>
+              <td><strong>ParaView</strong></td>
+              <td>Medium → Advanced</td>
+              <td>★★★★★</td>
+              <td>★★★☆☆</td>
+              <td>★★★★★</td>
+            </tr>
+
+            <tr>
+              <td><strong>PhysicsSims</strong></td>
+              <td>Beginner</td>
+              <td>★★★☆☆</td>
+              <td>★☆☆☆☆</td>
+              <td>★★★★☆</td>
+            </tr>
+
+          </tbody>
+
+        </table>
+
+      </div>
+
+    </section>
+
+
+    <!-- Who should use -->
+    <section class="section">
+
+      <div class="section-heading">
+        <span class="section-number">17</span>
+        <div>
+          <p class="eyebrow">CHOOSE YOUR PATH</p>
+          <h2>Who should use which tool?</h2>
+        </div>
+      </div>
+
+      <div class="choice-grid">
+
+        <div>
+          <span>🌱</span>
+          <h3>Just exploring physics?</h3>
+          <p>
+            Start with interactive physics simulations.
+            Focus on understanding the concept before coding.
+          </p>
+        </div>
+
+        <div>
+          <span>📐</span>
+          <h3>Love mathematics?</h3>
+          <p>
+            Start with GNU Octave and gradually learn
+            numerical methods.
+          </p>
+        </div>
+
+        <div>
+          <span>💻</span>
+          <h3>Want to code simulations?</h3>
+          <p>
+            Learn Python with NumPy, SciPy and Matplotlib.
+          </p>
+        </div>
+
+        <div>
+          <span>🚀</span>
+          <h3>Interested in aerospace?</h3>
+          <p>
+            Study mechanics, differential equations and
+            numerical simulation together.
+          </p>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- Learning -->
+    <section class="section learning-section" id="learning">
+
+      <div class="section-heading">
+        <span class="section-number">18</span>
+        <div>
+          <p class="eyebrow">LEARNING</p>
+          <h2>🎓 Learn This Field</h2>
+        </div>
+      </div>
+
+      <div class="learning-hub">
+
+        <div class="learning-icon">🎓</div>
+
+        <div>
+          <h3>Student Learning Hub</h3>
+
+          <p>
+            Instead of repeating channel recommendations on every
+            field page, all educational resources are organized in
+            one dedicated learning hub.
+          </p>
+
+          <a href="education.html" class="btn primary">
+            Open Student Learning Hub →
+          </a>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- Learning Path -->
+    <section class="section">
+
+      <div class="section-heading">
+        <span class="section-number">19</span>
+        <div>
+          <p class="eyebrow">ROADMAP</p>
+          <h2>Beginner → Advanced</h2>
+        </div>
+      </div>
+
+      <div class="roadmap">
+
+        <div class="roadmap-item">
+          <span>01</span>
+          <div>
+            <h3>Physics Fundamentals</h3>
+            <p>
+              Motion, force, energy, momentum, gravity and waves.
+            </p>
+          </div>
+        </div>
+
+        <div class="roadmap-item">
+          <span>02</span>
+          <div>
+            <h3>Mathematics</h3>
+            <p>
+              Algebra, trigonometry, calculus, vectors and matrices.
+            </p>
+          </div>
+        </div>
+
+        <div class="roadmap-item">
+          <span>03</span>
+          <div>
+            <h3>Programming</h3>
+            <p>
+              Learn Python and basic computational thinking.
+            </p>
+          </div>
+        </div>
+
+        <div class="roadmap-item">
+          <span>04</span>
+          <div>
+            <h3>Numerical Methods</h3>
+            <p>
+              Learn how computers approximate mathematical solutions.
+            </p>
+          </div>
+        </div>
+
+        <div class="roadmap-item">
+          <span>05</span>
+          <div>
+            <h3>Simulation</h3>
+            <p>
+              Build models of physical systems and visualize their behaviour.
+            </p>
+          </div>
+        </div>
+
+        <div class="roadmap-item">
+          <span>06</span>
+          <div>
+            <h3>Advanced Research</h3>
+            <p>
+              Explore CFD, complex systems, computational mechanics
+              and high-performance computing.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- First Projects -->
+    <section class="section">
+
+      <div class="section-heading">
+        <span class="section-number">20</span>
+        <div>
+          <p class="eyebrow">START HERE</p>
+          <h2>First project ideas</h2>
+        </div>
+      </div>
+
+      <div class="first-projects">
+
+        <div class="first-project">
+          <span>01</span>
+          <h3>Projectile Motion</h3>
+          <p>
+            Change launch angle and velocity and plot the trajectory.
+          </p>
+        </div>
+
+        <div class="first-project">
+          <span>02</span>
+          <h3>Gravity Simulator</h3>
+          <p>
+            Simulate gravitational interaction between two or more objects.
+          </p>
+        </div>
+
+        <div class="first-project">
+          <span>03</span>
+          <h3>Spring-Mass System</h3>
+          <p>
+            Simulate oscillation using Hooke's law.
+          </p>
+        </div>
+
+        <div class="first-project">
+          <span>04</span>
+          <h3>Planetary Orbit</h3>
+          <p>
+            Use gravity and velocity to create an orbital model.
+          </p>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- Careers -->
+    <section class="section">
+
+      <div class="section-heading">
+        <span class="section-number">21</span>
+        <div>
+          <p class="eyebrow">CAREERS</p>
+          <h2>Career possibilities</h2>
+        </div>
+      </div>
+
+      <div class="career-grid">
+
+        <div>
+          <span>🔬</span>
+          <h3>Computational Physicist</h3>
+        </div>
+
+        <div>
+          <span>🚀</span>
+          <h3>Aerospace Engineer</h3>
+        </div>
+
+        <div>
+          <span>💻</span>
+          <h3>Scientific Programmer</h3>
+        </div>
+
+        <div>
+          <span>📊</span>
+          <h3>Simulation Engineer</h3>
+        </div>
+
+        <div>
+          <span>🌊</span>
+          <h3>CFD Engineer</h3>
+        </div>
+
+        <div>
+          <span>🧠</span>
+          <h3>Research Scientist</h3>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- Related Fields -->
+    <section class="section">
+
+      <div class="section-heading">
+        <span class="section-number">22</span>
+        <div>
+          <p class="eyebrow">CONNECTIONS</p>
+          <h2>Related fields</h2>
+        </div>
+      </div>
+
+      <div class="related-grid">
+
+        <a href="#">
+          <span>📐</span>
+          Mathematics
+        </a>
+
+        <a href="#">
+          <span>💻</span>
+          Computer Science
+        </a>
+
+        <a href="#">
+          <span>🚀</span>
+          Aerospace
+        </a>
+
+        <a href="#">
+          <span>🤖</span>
+          Artificial Intelligence
+        </a>
+
+        <a href="#">
+          <span>🌌</span>
+          Astronomy
+        </a>
+
+        <a href="#">
+          <span>🧬</span>
+          Computational Biology
+        </a>
+
+      </div>
+
+    </section>
+
+
+    <!-- Interesting Facts -->
+    <section class="section facts-section">
+
+      <div class="section-heading">
+        <span class="section-number">23</span>
+        <div>
+          <p class="eyebrow">DID YOU KNOW?</p>
+          <h2>Things people often don't realize</h2>
+        </div>
+      </div>
+
+      <div class="facts-grid">
+
+        <div class="fact">
+          <span>01</span>
+          <p>
+            A computer simulation does not automatically represent
+            reality perfectly. The assumptions inside the model matter.
+          </p>
+        </div>
+
+        <div class="fact">
+          <span>02</span>
+          <p>
+            Many physical equations cannot be solved exactly, so
+            numerical methods are used to approximate their solutions.
+          </p>
+        </div>
+
+        <div class="fact">
+          <span>03</span>
+          <p>
+            Small changes in some systems can produce dramatically
+            different outcomes — a key idea behind chaos theory.
+          </p>
+        </div>
+
+        <div class="fact">
+          <span>04</span>
+          <p>
+            Simulation connects subjects that students often learn
+            separately: physics, mathematics and programming.
+          </p>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- FAQ -->
+    <section class="section faq-section">
+
+      <div class="section-heading">
+        <span class="section-number">24</span>
+        <div>
+          <p class="eyebrow">QUESTIONS</p>
+          <h2>FAQ</h2>
+        </div>
+      </div>
+
+      <div class="faq">
+
+        <div class="faq-item">
+          <button class="faq-question">
+            Do I need advanced mathematics to start?
+            <span>+</span>
+          </button>
+
+          <div class="faq-answer">
+            <p>
+              No. You can start with basic mechanics and simple
+              simulations. Advanced computational physics eventually
+              requires calculus, linear algebra and differential equations.
+            </p>
+          </div>
+        </div>
+
+
+        <div class="faq-item">
+          <button class="faq-question">
+            Do I need programming?
+            <span>+</span>
+          </button>
+
+          <div class="faq-answer">
+            <p>
+              Not for every simulation. But programming becomes very
+              important when you want to create your own models or
+              work with scientific datasets.
+            </p>
+          </div>
+        </div>
+
+
+        <div class="faq-item">
+          <button class="faq-question">
+            Which programming language is useful?
+            <span>+</span>
+          </button>
+
+          <div class="faq-answer">
+            <p>
+              Python is an excellent starting point because of its
+              scientific ecosystem. C, C++, Fortran and Julia are also
+              used in scientific computing.
+            </p>
+          </div>
+        </div>
+
+
+        <div class="faq-item">
+          <button class="faq-question">
+            Is simulation the same as real experimentation?
+            <span>+</span>
+          </button>
+
+          <div class="faq-answer">
+            <p>
+              No. Simulation is a model of a system. It is extremely
+              useful, but experimental data is still important for
+              checking whether a model represents reality accurately.
+            </p>
+          </div>
+        </div>
+
+
+        <div class="faq-item">
+          <button class="faq-question">
+            Can a normal laptop handle physics simulations?
+            <span>+</span>
+          </button>
+
+          <div class="faq-answer">
+            <p>
+              Yes. Beginner and many intermediate simulations can run
+              perfectly well on an ordinary laptop. Very large models
+              may require much more computing power.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- Summary -->
+    <section class="section">
+
+      <div class="summary-card">
+
+        <div>
+          <p class="eyebrow">QUICK SUMMARY</p>
+
+          <h2>
+            Physics becomes even more powerful
+            when you can simulate it.
+          </h2>
+
+          <p>
+            This field combines physical laws, mathematics,
+            algorithms and computing to investigate systems,
+            test ideas and visualize behaviour.
+          </p>
+        </div>
+
+        <div class="summary-points">
+
+          <span>⚛️ Physics</span>
+          <span>📐 Mathematics</span>
+          <span>💻 Programming</span>
+          <span>📊 Numerical Methods</span>
+          <span>🚀 Simulation</span>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- Navigation -->
+    <section class="explore-next">
+
+      <p class="eyebrow">KEEP EXPLORING</p>
+
+      <div class="next-links">
+
+        <a href="editing.html" class="next-card">
+          <span>←</span>
+          <div>
+            <small>Previous Field</small>
+            <strong>Image, Video & Audio Editing</strong>
+          </div>
+        </a>
+
+        <a href="education.html" class="next-card">
+          <span>🎓</span>
+          <div>
+            <small>Learning</small>
+            <strong>Student Learning Hub</strong>
+          </div>
+        </a>
+
+        <a href="kicad.html" class="next-card">
+          <div>
+            <small>Next Field</small>
+            <strong>Electronics / PCB Design</strong>
+          </div>
+          <span>→</span>
+        </a>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- Footer -->
+  <footer class="footer">
+
+    <div class="footer-content">
+
+      <div>
+        <a href="index.html" class="logo">
+          <span class="logo-dot"></span>
+          Field Explorer
+        </a>
+
+        <p>
+          Explore powerful fields through free and open-source tools.
+        </p>
+      </div>
+
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="fields.html">Fields</a>
+        <a href="education.html">Education</a>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <span>Built for curious minds.</span>
+      <span>© 2026 Field Explorer</span>
+    </div>
+
+  </footer>
+
+
+  <!-- Back to Top -->
+  <button id="topBtn" class="top-btn" aria-label="Back to top">
+    ↑
+  </button>
+
+
+  <script src="../fields/physics.js"></script>
+
+</body>
+</html>

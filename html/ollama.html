@@ -1,0 +1,1362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Local AI — Ollama</title>
+
+    <link rel="stylesheet" href="ollama.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="hero">
+
+        <div class="hero-content">
+
+            <span class="field-number">
+                FIELD 03
+            </span>
+
+            <h1>
+                Local AI
+            </h1>
+
+            <p>
+                Run powerful AI models directly on your own computer,
+                with more control, privacy and independence from cloud
+                services.
+            </p>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= CONTROLS ================= -->
+
+    <div class="controls">
+
+        <button id="themeBtn">
+            ☀️ Light Mode
+        </button>
+
+        <button id="topBtn">
+            ↑
+        </button>
+
+    </div>
+
+
+    <!-- ================= PROGRESS ================= -->
+
+    <div id="progressBar"></div>
+
+
+    <!-- ================= SEARCH ================= -->
+
+    <div class="search-box">
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Search this field..."
+        >
+
+    </div>
+
+
+    <main>
+
+
+        <!-- ================= WHAT IS LOCAL AI ================= -->
+
+        <section class="intro reveal">
+
+            <h2>
+                What Is Local AI?
+            </h2>
+
+            <p>
+                Local AI means running artificial intelligence models
+                directly on your own computer instead of sending every
+                request to a remote cloud server.
+            </p>
+
+            <p>
+                This allows developers, researchers and curious users
+                to experiment with AI while having greater control over
+                their data, models and computing environment.
+            </p>
+
+        </section>
+
+
+        <!-- ================= WHY MATTERS ================= -->
+
+        <section class="reveal">
+
+            <h2>
+                Why Does Local AI Matter?
+            </h2>
+
+            <div class="info-grid">
+
+                <article class="info-card">
+
+                    <span>🔒</span>
+
+                    <h3>
+                        Privacy
+                    </h3>
+
+                    <p>
+                        Data can remain on your own machine instead of
+                        being sent to an external AI service.
+                    </p>
+
+                </article>
+
+
+                <article class="info-card">
+
+                    <span>⚡</span>
+
+                    <h3>
+                        Local Processing
+                    </h3>
+
+                    <p>
+                        Once a model is available locally, you can
+                        interact with it without depending entirely
+                        on a remote API.
+                    </p>
+
+                </article>
+
+
+                <article class="info-card">
+
+                    <span>🧪</span>
+
+                    <h3>
+                        Experimentation
+                    </h3>
+
+                    <p>
+                        Developers can test different models,
+                        prompts and AI workflows on their own systems.
+                    </p>
+
+                </article>
+
+
+                <article class="info-card">
+
+                    <span>🧠</span>
+
+                    <h3>
+                        Understanding AI
+                    </h3>
+
+                    <p>
+                        Local AI provides a practical way to learn
+                        about models, inference and AI applications.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= WHAT CAN YOU DO ================= -->
+
+        <section class="reveal">
+
+            <h2>
+                What Can You Do With Local AI?
+            </h2>
+
+            <div class="feature-grid">
+
+                <div>
+                    <h3>💬 AI Chat</h3>
+                    <p>
+                        Run conversational AI models locally.
+                    </p>
+                </div>
+
+                <div>
+                    <h3>💻 Coding Assistance</h3>
+                    <p>
+                        Experiment with local models for programming
+                        and code-related tasks.
+                    </p>
+                </div>
+
+                <div>
+                    <h3>📄 Document Analysis</h3>
+                    <p>
+                        Build applications that process and analyse
+                        your own documents.
+                    </p>
+                </div>
+
+                <div>
+                    <h3>🔬 AI Research</h3>
+                    <p>
+                        Compare models and experiment with different
+                        AI configurations.
+                    </p>
+                </div>
+
+                <div>
+                    <h3>🤖 AI Applications</h3>
+                    <p>
+                        Integrate local models into your own software.
+                    </p>
+                </div>
+
+                <div>
+                    <h3>🛠️ Automation</h3>
+                    <p>
+                        Build local AI-powered workflows and tools.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= APPLICATIONS ================= -->
+
+        <section class="reveal">
+
+            <h2>
+                Real-World Applications
+            </h2>
+
+            <div class="application-list">
+
+                <div>
+                    <strong>Software Development</strong>
+                    <span>
+                        Local coding assistants and development tools.
+                    </span>
+                </div>
+
+                <div>
+                    <strong>Research</strong>
+                    <span>
+                        Experimenting with AI models and inference.
+                    </span>
+                </div>
+
+                <div>
+                    <strong>Education</strong>
+                    <span>
+                        Learning about AI without requiring a cloud API.
+                    </span>
+                </div>
+
+                <div>
+                    <strong>Businesses</strong>
+                    <span>
+                        Private AI workflows and internal applications.
+                    </span>
+                </div>
+
+                <div>
+                    <strong>Personal Projects</strong>
+                    <span>
+                        Build custom AI-powered applications.
+                    </span>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= PEOPLE ================= -->
+
+        <section class="reveal">
+
+            <h2>
+                What Kind of People Work With Local AI?
+            </h2>
+
+            <div class="people-grid">
+
+                <span>AI Developers</span>
+                <span>Machine Learning Engineers</span>
+                <span>Software Developers</span>
+                <span>Researchers</span>
+                <span>Data Scientists</span>
+                <span>Students</span>
+                <span>Cybersecurity Researchers</span>
+                <span>AI Hobbyists</span>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CORE CONCEPTS ================= -->
+
+        <section class="reveal">
+
+            <h2>
+                Core Concepts You Should Understand
+            </h2>
+
+            <div class="concept-grid">
+
+                <article>
+                    <h3>Large Language Models</h3>
+                    <p>
+                        AI models trained to understand and generate
+                        human-like text.
+                    </p>
+                </article>
+
+                <article>
+                    <h3>Inference</h3>
+                    <p>
+                        The process of using a trained model to produce
+                        an output from an input.
+                    </p>
+                </article>
+
+                <article>
+                    <h3>Parameters</h3>
+                    <p>
+                        Values learned by a model during training that
+                        influence its behaviour.
+                    </p>
+                </article>
+
+                <article>
+                    <h3>Tokens</h3>
+                    <p>
+                        Pieces of text that AI models process.
+                    </p>
+                </article>
+
+                <article>
+                    <h3>Quantization</h3>
+                    <p>
+                        Reducing numerical precision to make models
+                        smaller and easier to run.
+                    </p>
+                </article>
+
+                <article>
+                    <h3>Context Window</h3>
+                    <p>
+                        The amount of information a model can consider
+                        during an interaction.
+                    </p>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= BEST FOSS TOOLS ================= -->
+
+        <section class="reveal">
+
+            <h2>
+                Best Free & Open-Source Tools
+            </h2>
+
+            <div class="tool-table">
+
+                <div class="table-row table-head">
+
+                    <span>Tool</span>
+                    <span>Purpose</span>
+                    <span>Best For</span>
+
+                </div>
+
+
+                <div class="table-row">
+
+                    <span>Ollama</span>
+
+                    <span>
+                        Local model runner
+                    </span>
+
+                    <span>
+                        Beginners & developers
+                    </span>
+
+                </div>
+
+
+                <div class="table-row">
+
+                    <span>llama.cpp</span>
+
+                    <span>
+                        Efficient local inference
+                    </span>
+
+                    <span>
+                        Developers & researchers
+                    </span>
+
+                </div>
+
+
+                <div class="table-row">
+
+                    <span>Open WebUI</span>
+
+                    <span>
+                        Web interface for local AI
+                    </span>
+
+                    <span>
+                        Interactive AI usage
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= FEATURED TOOL ================= -->
+
+        <section class="featured reveal">
+
+            <span class="featured-label">
+                ⭐ FEATURED TOOL
+            </span>
+
+            <h2>
+                Ollama
+            </h2>
+
+            <p>
+                Ollama makes it easier to run and interact with
+                open-source large language models locally.
+            </p>
+
+
+            <div class="tool-features">
+
+                <div>
+                    <strong>Local</strong>
+                    <span>
+                        Models run on your own machine.
+                    </span>
+                </div>
+
+                <div>
+                    <strong>Developer Friendly</strong>
+                    <span>
+                        Provides a simple way to interact with models
+                        from applications.
+                    </span>
+                </div>
+
+                <div>
+                    <strong>Model Support</strong>
+                    <span>
+                        Supports many popular open models.
+                    </span>
+                </div>
+
+                <div>
+                    <strong>API</strong>
+                    <span>
+                        Applications can communicate with local models.
+                    </span>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= HOW IT WORKS ================= -->
+
+        <section class="reveal">
+
+            <h2>
+                How Does Ollama Work?
+            </h2>
+
+            <p>
+                The basic idea is simple:
+            </p>
+
+            <pre><code>
+Choose a model
+      ↓
+Download the model
+      ↓
+Ollama loads the model
+      ↓
+Your prompt is processed locally
+      ↓
+The model generates a response
+      ↓
+Response appears on your computer
+            </code></pre>
+
+            <p>
+                The exact performance depends on the model, available
+                RAM, CPU, GPU and other hardware characteristics.
+            </p>
+
+        </section>
+
+
+        <!-- ================= EXAMPLE ================= -->
+
+        <section class="reveal">
+
+            <h2>
+                Example: Local AI Assistant
+            </h2>
+
+            <p>
+                Imagine creating a personal study assistant.
+                Instead of sending every question to a cloud service,
+                your application could communicate with a locally
+                running AI model.
+            </p>
+
+            <pre><code>
+Student
+   ↓
+Your Application
+   ↓
+Ollama
+   ↓
+Local AI Model
+   ↓
+Response
+            </code></pre>
+
+        </section>
+
+
+        <!-- ================= WHAT CAN BUILD ================= -->
+
+        <section class="reveal">
+
+            <h2>
+                What Can You Build?
+            </h2>
+
+            <div class="project-grid">
+
+                <article>
+                    <span>🧠</span>
+                    <h3>Study Assistant</h3>
+                    <p>
+                        A local AI application for explaining concepts
+                        and answering questions.
+                    </p>
+                </article>
+
+                <article>
+                    <span>💻</span>
+                    <h3>Coding Assistant</h3>
+                    <p>
+                        Experiment with locally running models
+                        inside your development workflow.
+                    </p>
+                </article>
+
+                <article>
+                    <span>📚</span>
+                    <h3>Document Assistant</h3>
+                    <p>
+                        Build an application that works with
+                        your own collection of documents.
+                    </p>
+                </article>
+
+                <article>
+                    <span>🤖</span>
+                    <h3>AI Chatbot</h3>
+                    <p>
+                        Create a custom conversational interface
+                        around a local model.
+                    </p>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= DIFFICULTY ================= -->
+
+        <section class="reveal">
+
+            <h2>
+                Difficulty Level
+            </h2>
+
+            <div class="difficulty">
+
+                <div>
+                    <span>Beginner</span>
+                    <p>
+                        Run an existing model and interact with it.
+                    </p>
+                </div>
+
+                <div>
+                    <span>Intermediate</span>
+                    <p>
+                        Connect Ollama to your own applications.
+                    </p>
+                </div>
+
+                <div>
+                    <span>Advanced</span>
+                    <p>
+                        Understand inference, model formats,
+                        quantization and AI system design.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= HARDWARE ================= -->
+
+        <section class="reveal">
+
+            <h2>
+                Hardware Requirements
+            </h2>
+
+            <div class="hardware-grid">
+
+                <div>
+
+                    <h3>CPU</h3>
+
+                    <p>
+                        A modern multi-core CPU can run smaller models,
+                        although performance varies significantly.
+                    </p>
+
+                </div>
+
+                <div>
+
+                    <h3>RAM</h3>
+
+                    <p>
+                        More RAM allows you to work with larger models.
+                    </p>
+
+                </div>
+
+                <div>
+
+                    <h3>GPU</h3>
+
+                    <p>
+                        A compatible GPU with sufficient VRAM can
+                        significantly improve local AI performance.
+                    </p>
+
+                </div>
+
+                <div>
+
+                    <h3>Storage</h3>
+
+                    <p>
+                        AI models can require several gigabytes of
+                        storage, so free disk space matters.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= ADVANTAGES ================= -->
+
+        <section class="reveal">
+
+            <h2>
+                Advantages
+            </h2>
+
+            <ul class="check-list">
+
+                <li>
+                    Greater control over your data
+                </li>
+
+                <li>
+                    Can work without constant cloud communication
+                </li>
+
+                <li>
+                    Useful for experimentation
+                </li>
+
+                <li>
+                    Open-source ecosystem
+                </li>
+
+                <li>
+                    Can integrate with your own applications
+                </li>
+
+                <li>
+                    Useful for learning AI development
+                </li>
+
+            </ul>
+
+        </section>
+
+
+        <!-- ================= LIMITATIONS ================= -->
+
+        <section class="reveal">
+
+            <h2>
+                Limitations
+            </h2>
+
+            <ul class="warning-list">
+
+                <li>
+                    Large models can require powerful hardware
+                </li>
+
+                <li>
+                    Local models may be slower than cloud services
+                    on weaker computers
+                </li>
+
+                <li>
+                    Model quality varies between models
+                </li>
+
+                <li>
+                    Storage requirements can become large
+                </li>
+
+                <li>
+                    Setting up advanced AI systems requires technical
+                    knowledge
+                </li>
+
+            </ul>
+
+        </section>
+
+
+        <!-- ================= ALTERNATIVES ================= -->
+
+        <section class="reveal">
+
+            <h2>
+                Alternatives
+            </h2>
+
+            <div class="alternative-grid">
+
+                <article>
+
+                    <h3>
+                        llama.cpp
+                    </h3>
+
+                    <p>
+                        Lightweight inference framework focused on
+                        running language models efficiently.
+                    </p>
+
+                </article>
+
+
+                <article>
+
+                    <h3>
+                        Open WebUI
+                    </h3>
+
+                    <p>
+                        A web-based interface that can be used with
+                        local AI backends.
+                    </p>
+
+                </article>
+
+
+                <article>
+
+                    <h3>
+                        GPT4All
+                    </h3>
+
+                    <p>
+                        Desktop-oriented local AI software for
+                        interacting with local language models.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= COMPARISON ================= -->
+
+        <section class="reveal">
+
+            <h2>
+                Tool Comparison
+            </h2>
+
+            <div class="comparison">
+
+                <div class="comparison-row comparison-head">
+
+                    <span>Tool</span>
+                    <span>Ease of Use</span>
+                    <span>Main Strength</span>
+
+                </div>
+
+
+                <div class="comparison-row">
+
+                    <span>Ollama</span>
+                    <span>Easy</span>
+                    <span>Simple local AI setup</span>
+
+                </div>
+
+
+                <div class="comparison-row">
+
+                    <span>llama.cpp</span>
+                    <span>Technical</span>
+                    <span>Efficient inference</span>
+
+                </div>
+
+
+                <div class="comparison-row">
+
+                    <span>Open WebUI</span>
+                    <span>Easy</span>
+                    <span>Web interface</span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= WHO SHOULD USE ================= -->
+
+        <section class="reveal">
+
+            <h2>
+                Who Should Use Which Tool?
+            </h2>
+
+            <div class="choice-grid">
+
+                <div>
+
+                    <h3>
+                        🟣 Ollama
+                    </h3>
+
+                    <p>
+                        Best starting point for students and developers
+                        who want to experiment with local AI.
+                    </p>
+
+                </div>
+
+
+                <div>
+
+                    <h3>
+                        🔵 llama.cpp
+                    </h3>
+
+                    <p>
+                        Better suited to people who want deeper control
+                        over local model inference.
+                    </p>
+
+                </div>
+
+
+                <div>
+
+                    <h3>
+                        🟢 Open WebUI
+                    </h3>
+
+                    <p>
+                        Useful when you want a convenient browser-based
+                        interface for local models.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= LEARN ================= -->
+
+        <section class="learn reveal">
+
+            <h2>
+                🎓 LEARN THIS FIELD
+            </h2>
+
+
+            <div class="learn-block">
+
+                <span>
+                    🥇 Best Starting Point
+                </span>
+
+                <h3>
+                    Ollama Documentation
+                </h3>
+
+                <p>
+                    → Best for understanding the tool and getting started
+                </p>
+
+            </div>
+
+
+            <div class="learn-block">
+
+                <span>
+                    🔬 Go Deeper
+                </span>
+
+                <h3>
+                    Andrej Karpathy
+                </h3>
+
+                <p>
+                    → More advanced AI and large-language-model concepts
+                </p>
+
+            </div>
+
+
+            <div class="learn-block">
+
+                <span>
+                    🛠️ Practical Learning
+                </span>
+
+                <h3>
+                    freeCodeCamp.org
+                </h3>
+
+                <p>
+                    → Programming and practical AI development
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= LEARNING PATH ================= -->
+
+        <section class="reveal">
+
+            <h2>
+                Beginner → Advanced Learning Path
+            </h2>
+
+            <div class="path">
+
+                <div>
+                    <strong>01</strong>
+                    <h3>Learn basic AI concepts</h3>
+                    <p>
+                        Understand models, tokens, inference and prompts.
+                    </p>
+                </div>
+
+                <div>
+                    <strong>02</strong>
+                    <h3>Run a local model</h3>
+                    <p>
+                        Install Ollama and experiment with a model.
+                    </p>
+                </div>
+
+                <div>
+                    <strong>03</strong>
+                    <h3>Use the API</h3>
+                    <p>
+                        Connect your own application to a local model.
+                    </p>
+                </div>
+
+                <div>
+                    <strong>04</strong>
+                    <h3>Understand model architecture</h3>
+                    <p>
+                        Learn how modern language models work internally.
+                    </p>
+                </div>
+
+                <div>
+                    <strong>05</strong>
+                    <h3>Build AI systems</h3>
+                    <p>
+                        Combine models, software and data into useful
+                        applications.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= FIRST PROJECTS ================= -->
+
+        <section class="reveal">
+
+            <h2>
+                First Project Ideas
+            </h2>
+
+            <div class="project-list">
+
+                <div>
+                    <strong>01 — Local Chatbot</strong>
+                    <span>
+                        Create a simple interface for talking to a
+                        local model.
+                    </span>
+                </div>
+
+                <div>
+                    <strong>02 — AI Study Helper</strong>
+                    <span>
+                        Build a small application that explains
+                        school concepts.
+                    </span>
+                </div>
+
+                <div>
+                    <strong>03 — Local Coding Assistant</strong>
+                    <span>
+                        Experiment with AI-generated programming help.
+                    </span>
+                </div>
+
+                <div>
+                    <strong>04 — Document Q&A</strong>
+                    <span>
+                        Build a system that answers questions about
+                        selected documents.
+                    </span>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CAREERS ================= -->
+
+        <section class="reveal">
+
+            <h2>
+                Career Possibilities
+            </h2>
+
+            <div class="career-grid">
+
+                <span>AI Engineer</span>
+                <span>Machine Learning Engineer</span>
+                <span>AI Application Developer</span>
+                <span>LLM Engineer</span>
+                <span>Research Engineer</span>
+                <span>Data Scientist</span>
+                <span>AI Infrastructure Engineer</span>
+                <span>Software Engineer</span>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= RELATED ================= -->
+
+        <section class="reveal">
+
+            <h2>
+                Related Fields
+            </h2>
+
+            <div class="related-grid">
+
+                <div>
+                    Machine Learning
+                </div>
+
+                <div>
+                    Deep Learning
+                </div>
+
+                <div>
+                    Data Science
+                </div>
+
+                <div>
+                    Software Engineering
+                </div>
+
+                <div>
+                    Natural Language Processing
+                </div>
+
+                <div>
+                    Computer Science
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= FACTS ================= -->
+
+        <section class="facts reveal">
+
+            <h2>
+                Things People Often Don't Know
+            </h2>
+
+            <div class="fact-grid">
+
+                <div>
+                    <strong>01</strong>
+                    <p>
+                        Local AI does not automatically mean every
+                        model will work offline with no setup.
+                    </p>
+                </div>
+
+                <div>
+                    <strong>02</strong>
+                    <p>
+                        Model size is only one factor affecting
+                        performance.
+                    </p>
+                </div>
+
+                <div>
+                    <strong>03</strong>
+                    <p>
+                        Quantization can make large models much more
+                        practical on consumer hardware.
+                    </p>
+                </div>
+
+                <div>
+                    <strong>04</strong>
+                    <p>
+                        Local AI can be combined with ordinary web
+                        applications and programming languages.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= FAQ ================= -->
+
+        <section class="faq reveal">
+
+            <h2>
+                FAQ
+            </h2>
+
+
+            <div class="faq-item">
+
+                <button>
+                    Is Ollama an AI model?
+                    <span>+</span>
+                </button>
+
+                <p>
+                    No. Ollama is a tool for running and interacting
+                    with AI models locally. The model itself is a
+                    separate component.
+                </p>
+
+            </div>
+
+
+            <div class="faq-item">
+
+                <button>
+                    Does local AI require a GPU?
+                    <span>+</span>
+                </button>
+
+                <p>
+                    Not necessarily. Some models can run using a CPU,
+                    although suitable GPU hardware can significantly
+                    improve performance.
+                </p>
+
+            </div>
+
+
+            <div class="faq-item">
+
+                <button>
+                    Is local AI completely free?
+                    <span>+</span>
+                </button>
+
+                <p>
+                    Many local AI tools and models are available under
+                    free or open-source licenses, but hardware,
+                    electricity and some model licenses can still
+                    involve costs.
+                </p>
+
+            </div>
+
+
+            <div class="faq-item">
+
+                <button>
+                    Is local AI useful for students?
+                    <span>+</span>
+                </button>
+
+                <p>
+                    Yes. It can be an interesting way to learn about
+                    AI, programming, models and computer systems.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= SUMMARY ================= -->
+
+        <section class="summary reveal">
+
+            <h2>
+                Quick Summary
+            </h2>
+
+            <p>
+                Local AI is about bringing AI computation closer to
+                the user. Ollama provides a simple entry point for
+                running supported models locally and experimenting
+                with AI applications.
+            </p>
+
+        </section>
+
+
+        <!-- ================= EXPLORE NEXT ================= -->
+
+        <section class="explore reveal">
+
+            <h2>
+                Explore Next
+            </h2>
+
+            <p>
+                Continue exploring the world of free and
+                open-source technology.
+            </p>
+
+            <div class="next-buttons">
+
+                <a href="godot.html">
+                    ← Game Development
+                </a>
+
+                <a href="education.html">
+                    🎓 Student Learning Hub
+                </a>
+
+                <!-- NEXT FIELD -->
+
+                <a href="kicad.html">
+                    Electronics / PCB Design →
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <p>
+            Built for curious minds exploring technology.
+        </p>
+
+    </footer>
+
+
+    <script src="ollama.js"></script>
+
+</body>
+
+</html>
