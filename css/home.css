@@ -399,7 +399,7 @@ body.light .navbar {
     color: white;
 
     background:
-        var(--gradient);
+        black;
 
     box-shadow:
         0 8px 30px rgba(124,58,237,.35);
@@ -3794,4 +3794,162 @@ body.light .search-box {
 
     }
 
+}
+/* ================================
+   FOUNDER SECTION
+================================ */
+
+.founder-section {
+    max-width: 1100px;
+    margin: 100px auto;
+    padding: 55px;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 28px;
+
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+
+    box-shadow: 0 25px 70px rgba(0, 0, 0, 0.25);
+
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.founder-section:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 35px 90px rgba(0, 0, 0, 0.35);
+}
+
+
+/* Founder Image */
+
+.founder-image {
+    flex: 0 0 330px;
+    position: relative;
+}
+
+.founder-image::before {
+    content: "";
+    position: absolute;
+    inset: -10px;
+    border-radius: 24px;
+    background: linear-gradient(135deg, #8b5cf6, #06b6d4);
+    filter: blur(18px);
+    opacity: 0.35;
+    z-index: -1;
+}
+
+.founder-image img {
+    width: 330px;
+    height: 390px;
+    object-fit: cover;
+
+    border-radius: 22px;
+
+    display: block;
+
+    border: 1px solid rgba(255, 255, 255, 0.2);
+
+    transition: transform 0.5s ease;
+}
+
+.founder-image:hover img {
+    transform: scale(1.03);
+}
+
+
+/* Founder Content */
+
+.founder-content {
+    flex: 1;
+}
+
+.founder-label {
+    display: inline-block;
+
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 3px;
+
+    color: #a78bfa;
+
+    margin-bottom: 15px;
+}
+
+.founder-content h2 {
+    margin: 0 0 10px;
+
+    font-size: clamp(28px, 4vw, 46px);
+    line-height: 1.1;
+}
+
+.founder-content h3 {
+    margin: 0 0 22px;
+
+    font-size: 22px;
+    font-weight: 600;
+
+    color: #c4b5fd;
+}
+
+.founder-content p {
+    max-width: 600px;
+
+    font-size: 16px;
+    line-height: 1.8;
+
+    opacity: 0.8;
+
+    margin-bottom: 15px;
+}
+
+.founder-tag {
+    display: inline-block;
+
+    margin-top: 12px;
+    padding: 10px 18px;
+
+    border-radius: 999px;
+
+    background: rgba(139, 92, 246, 0.12);
+    border: 1px solid rgba(139, 92, 246, 0.3);
+
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+/* ================================
+   MOBILE
+================================ */
+
+@media (max-width: 768px) {
+
+    .founder-section {
+        margin: 60px 20px;
+        padding: 30px 22px;
+
+        flex-direction: column;
+        text-align: center;
+
+        gap: 35px;
+    }
+
+    .founder-image {
+        flex: none;
+    }
+
+    .founder-image img {
+        width: 250px;
+        height: 300px;
+    }
+
+    .founder-content p {
+        margin-left: auto;
+        margin-right: auto;
+    }
 }

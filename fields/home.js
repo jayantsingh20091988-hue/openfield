@@ -1112,3 +1112,57 @@ Sent through the OpenField website.`
 
 
 });
+// ================================
+// FOUNDER SECTION INTERACTION
+// ================================
+
+const founderSection = document.querySelector(".founder-section");
+
+if (founderSection) {
+
+    // Reveal animation when section enters the screen
+    const founderObserver = new IntersectionObserver(
+        (entries) => {
+
+            entries.forEach((entry) => {
+
+                if (entry.isIntersecting) {
+                    founderSection.classList.add("founder-visible");
+                }
+
+            });
+
+        },
+        {
+            threshold: 0.2
+        }
+    );
+
+    founderObserver.observe(founderSection);
+
+
+    // Subtle mouse movement effect
+    founderSection.addEventListener("mousemove", (event) => {
+
+        const rect = founderSection.getBoundingClientRect();
+
+        const x = event.clientX - rect.left;
+        const y = event.clientY - rect.top;
+
+        const moveX = (x / rect.width - 0.5) * 8;
+        const moveY = (y / rect.height - 0.5) * 8;
+
+        founderSection.style.transform =
+            `translateY(-6px) rotateX(${-moveY}deg) rotateY(${moveX}deg)`;
+
+    });
+
+
+    founderSection.addEventListener("mouseleave", () => {
+
+        founderSection.style.transform =
+            "translateY(0) rotateX(0) rotateY(0)";
+
+    });
+
+}
