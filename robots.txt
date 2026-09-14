@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://jayantsingh20091988-hue.github.io/openfield/sitemap.xml
