@@ -1,9 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <url>
     <loc>https://jayantsingh20091988-hue.github.io/openfield/</loc>
   </url>
 
-  
+  <url>
+    <loc>https://jayantsingh20091988-hue.github.io/openfield/html/vfx.html</loc>
+  </url>
+
+  <url>
+    <loc>https://jayantsingh20091988-hue.github.io/openfield/html/godot.html</loc>
+  </url>
+
+  <url>
+    <loc>https://jayantsingh20091988-hue.github.io/openfield/html/ollama.html</loc>
+  </url>
+
+  <url>
+    <loc>https://jayantsingh20091988-hue.github.io/openfield/html/kicad.html</loc>
+  </url>
+
+  <url>
+    <loc>https://jayantsingh20091988-hue.github.io/openfield/html/physics.html</loc>
+  </url>
+
+  <url>
+    <loc>https://jayantsingh20091988-hue.github.io/openfield/html/education.html</loc>
+  </url>
+
+  <url>
+    <loc>https://jayantsingh20091988-hue.github.io/openfield/html/editing.html</loc>
+  </url>
+
 </urlset>
